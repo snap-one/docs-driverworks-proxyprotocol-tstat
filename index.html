@@ -699,10 +699,11 @@
           </li>
       </ul>
         <ul class="toc-footer">
+            <li><a href='https://github.com/snap-one/docs-driverworks'>DriverWorks GitHub Home</a></li>
             <li><a href='https://snap-one.github.io/docs-driverworks-introduction/'>An Introduction to DriverWorks</a></li>
             <li><a href='https://snap-one.github.io/docs-driverworks-fundamentals/'>DriverWorks Fundamentals Guide</a></li>
             <li><a href='https://snap-one.github.io/docs-driverworks-api/'>DriverWorks API Reference Guide</a></li>
-            <li><a href='https://github.com/snap-one/docs-driverworks'>DriverWorks GitHub Home</a></li>
+            <li><a href='https://snap-one.github.io/docs-driverworks-xml/'>DriverWorks XML Reference</a></li>
             <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
@@ -847,22 +848,22 @@ Boolean indicating if the device has internal commands to increment and decremen
 Boolean indicating if the device supports the preset functionality including <code>custom_fields</code>. This does not including scheduling as <code>preset_scheduling</code> is a feature that is currently not supported. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstatt"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;can_preset_schedule&gt;&lt;/can_preset_schedule&gt;</code>
-Boolean indicating if the thermostat will support the <code>SET_EVENTS</code> commands for running presets based on scheduling created in Navigators.</p>
+Boolean indicating if the thermostat will support the <code>SET_EVENTS</code> commands for running presets based on scheduling created in Navigators. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstatt"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;current_temperature_max_c&gt;&lt;/current_temperature_max_c&gt;</code>
-Double indicating the maximum temperature that the thermostat will report in C. Default is 48.</p>
+Double indicating the maximum temperature that the thermostat will report in C. Default is 48. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;current_temperature_min_c&gt;&lt;/current_temperature_min_c&gt;</code>
-Double indicating the minimum temperature that the thermostat will report in C. Default is -40.</p>
+Double indicating the minimum temperature that the thermostat will report in C. Default is -40. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;current_temperature_max_f&gt;&lt;/current_temperature_max_f&gt;</code>
-Double indicating the maximum temperature that the thermostat will report in F. Default is 120.</p>
+Double indicating the maximum temperature that the thermostat will report in F. Default is 120. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;current_temperature_min_f&gt;&lt;/current_temperature_min_f&gt;</code>
-Double indicating the minimum temperature that the thermostat will report in F. Default is -40.</p>
+Double indicating the minimum temperature that the thermostat will report in F. Default is -40. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;current_temperature_resolution_c&gt;&lt;/current_temperature_resolution_c&gt;</code>
-Double indicating the increments that the temperature will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a <code>DYNAMIC_CAPBILITIES_CHANGED</code> notification.</p>
+Double indicating the increments that the temperature will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a>notification.</p>
 
 <p><code>&lt;current_temperature_resolution_f&gt;&lt;/current_temperature_resolution_f&gt;</code>
 Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note .2 is the lowest F resolution supported. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
@@ -948,7 +949,7 @@ Integer indicating the highest temperature the cool setpoint can be configured a
 <p><code>&lt;setpoint_cool_max_c&gt;&lt;/setpoint_cool_max_c&gt;</code>
 Integer indicating the highest temperature the cool setpoint can be configured as. Default is 90. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
-<p><code>&lt;setpoint_cool_max_c&gt;&lt;/setpoint_cool_max_c&gt;</code>
+<p><code>&lt;setpoint_cool_max_f&gt;&lt;/setpoint_cool_max_f&gt;</code>
 Integer indicating the highest temperature the cool setpoint can be configured as. Default is 89. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_cool_min&gt;&lt;/setpoint_cool_min&gt;</code>
@@ -967,10 +968,10 @@ Double indicating the increments that the setpoint will follow, such as .1, .5, 
 Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_heatcool_deadband_c&gt;&lt;/setpoint_heatcool_deadband_c&gt;</code>
-Double indicating the deadband range in Celcius that the hardware requires between heat and cool.  Default is 2.  Default is 2.  Post operating system 2.7.0, UI&#39;s will show both heat and cool setpoints moving if in Auto and the movement will be based on this deadband value. If a user tries to move heat above cool or cool below heat, the UI&#39;s will only send the setpoint command for the primarily moving setpoint.  A protocol driver will need to send two notifies back, one for heat and one for cool if in fact both setpoints were changed on the hardware.</p>
+Double indicating the deadband range in Celcius that the hardware requires between heat and cool.  Default is 2.  Default is 2.  Post operating system 2.7.0, UI&#39;s will show both heat and cool setpoints moving if in Auto and the movement will be based on this deadband value. If a user tries to move heat above cool or cool below heat, the UI&#39;s will only send the setpoint command for the primarily moving setpoint.  A protocol driver will need to send two notifies back, one for heat and one for cool if in fact both setpoints were changed on the hardware. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_heatcool_deadband_f&gt;&lt;/setpoint_heatcool_deadband_f&gt;</code>
-Double indicating the deadband range in Fahrenheit  that the hardware requires between heat and cool.  Default is 2.  Post operating system 2.7.0, UI&#39;s will show both heat and cool setpoints moving if in Auto and the movement will be based on this deadband value. If a user tries to move heat above cool or cool below heat, the UI&#39;s will only send the setpoint command for the primarily moving setpoint.  A protocol driver will need to send two notifies back, one for heat and one for cool if in fact both setpoints were changed on the hardware.</p>
+Double indicating the deadband range in Fahrenheit  that the hardware requires between heat and cool.  Default is 2.  Post operating system 2.7.0, UI&#39;s will show both heat and cool setpoints moving if in Auto and the movement will be based on this deadband value. If a user tries to move heat above cool or cool below heat, the UI&#39;s will only send the setpoint command for the primarily moving setpoint.  A protocol driver will need to send two notifies back, one for heat and one for cool if in fact both setpoints were changed on the hardware. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_heat_max&gt;&lt;/setpoint_heat_max&gt;</code>
 Integer indicating the highest temperature the heat setpoint can be configured as. Default is 88. If used, <code>_f </code>and<code>_c</code> do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
@@ -988,9 +989,12 @@ Integer indicating the lowest temperature the heat setpoint can be configured as
 Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 4. Best to use <code>_f</code> and <code>_c</code> and not the older Celsius x 10 capability. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_heat_min_f&gt;&lt;/setpoint_heat_min_f&gt;</code>
-Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 38. Best to use <code>_f</code> and <code>_c</code> and not the older celsius x 10 capability.</p>
+Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 38. Best to use <code>_f</code> and <code>_c</code> and not the older celsius x 10 capability. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_heat_resolution_c&gt;&lt;/setpoint_heat_resolution_c&gt;</code>
+Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+
+<p><code>&lt;setpoint_heat_resolution_f&gt;&lt;/setpoint_heat_resolution_f&gt;</code>
 Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;setpoint_dehumidify_max&gt;&lt;/setpoint_dehumidify_max&gt;</code>
