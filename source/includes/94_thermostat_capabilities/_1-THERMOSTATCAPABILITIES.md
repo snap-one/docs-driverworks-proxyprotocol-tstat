@@ -81,60 +81,60 @@ This is a comma delimited list of possible fan modes this thermostat supports. F
 This is a comma delimited list of all the possible states that the HVAC system fan supports. For example: Off, On, Low, Med, Circulate with no spaces after the commas. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][17] notification.
 
 
-`<has_humidity></has_humidity>`
+#### `<has_humidity></has_humidity>`
 Boolean indicating if the device can report the current humidity. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][18] notification.
 
 
-`<has_extras></has_extras>`
+#### `<has_extras></has_extras>`
 Boolean indicating if the device has extras commands support. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][19] notification.
 
 
-`<has_connection_status></has_connection_status>`
+#### `<has_connection_status></has_connection_status>`
 Boolean indicating if the device reports online/offline status of the hardware device, this is often forgotten about but very important to implement in new protocol drivers drivers.
 
 
-`<has_outdoor_temperature></has_outdoor_temperature>`
+#### `<has_outdoor_temperature></has_outdoor_temperature>`
 Boolean indicating if the device can provide an outdoor temperature. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][20] notification.
 
 
-`<has_remote_sensor></has_remote_sensor>`
+#### `<has_remote_sensor></has_remote_sensor>`
 Indicates if this thermostat has a remote sensor. Valid values: True/False.
 
 
-`<has_single_setpoint></has_single_setpoint>`
+#### `<has_single_setpoint></has_single_setpoint>`
  Boolean indicating if the device is single setpoint.  `can_heat, can_cool` and `can_auto` should be set to false if this option is used. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][21] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
-`<has_temperature></has_temperature>`
+#### `<has_temperature></has_temperature>`
 Boolean indicating if the device can provide a temperature of the thermostat/room. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][22] notification.
 
 
-`<has_vacation_mode></has_vacation_mode>`
+#### `<has_vacation_mode></has_vacation_mode>`
 Indicates if this thermostat supports vacation mode Valid values: True/False
 The capability `has_vacation_mode` must be set to true for the vacation commands and notifications to be executed. Preset Scheduling and Vacation Mode are mutually exclusive and drivers should really use Preset Scheduling to accomplish what Vacation Mode has done in the past.
 
 
-`<hold_modes></hold_modes>`
+#### `<hold_modes></hold_modes>`
 This is a comma delimited list of the possible hold modes this thermostat supports. Valid values include: Off, 2 Hours, Until Next, Permanent with no spaces after the commas. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][23] notification.
 
 
-`<humidity_modes></humidity_modes>`
+#### `<humidity_modes></humidity_modes>`
 A comma separated list of all the modes the device supports. For example: "Off,Humidify,Dehumidify,Auto" with no spaces after the commas. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][24] notification.
 
 
-`<humidity_states></humidity_states>`
+#### `<humidity_states></humidity_states>`
  A comma separated list of all the modes the device supports. Usually something like "Off,Humidifying,Dehumidifying", with no spaces after the commas.
 
 
-`<hvac_modes></hvac_modes>`
+#### `<hvac_modes></hvac_modes>`
 A comma separated list of all the modes the device supports. For example:  "Off,Heat,Cool", with no spaces after the commas.
 
 
-`<hvac_states></hvac_states>`
+#### `<hvac_states></hvac_states>`
 This is a comma delimited list that represents all of the possible states that the HVAC system supports. For example: Off, Heat, Cool, Heating, Stage 1 Cool, etc with no spaces after the commas
 
 
-`<outdoor_temperature_resolution_c></outdoor_temperature_resolution_c>`
+#### `<outdoor_temperature_resolution_c></outdoor_temperature_resolution_c>`
 Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note that .2 is the lowest C resolution supported. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][25] notification.
 
 
