@@ -815,7 +815,11 @@ Your driver can facilitate communications with multiple types of proxies for a s
 
 <h2 id='thermostat-capabilities-thermostat-capabilities'>THERMOSTAT CAPABILITIES</h2>
 
-<p>The following Capabilities are supported with the Thermostat Proxy. Please see the Samples folder delivered in this SDK for additional Thermostat (V2) code examples.</p>
+<p>The following Capabilities are supported with the Thermostat Proxy. </p>
+
+<p>Note the reference to the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat">Dynamic Capabilities Changed</a> notification in many of the capabilities defined below. Using the Dynamic Capabilities notify  is a way for a protocol driver to send updates about some capabilities that can be changed when settings change on the hardware.  An example would be a thermostat that now includes a humidifier. The thermostat would need to tell the proxy it can now do humidification. The  <code>&lt;can_humidify&gt;&lt;/can_humidify&gt;</code>  capability is designated as  a capability that can be changed using Dynamic Capabilities Changed. The capability can be passed as a parameter in the notify to update the thermostat proxy regarding humidification ability.</p>
+
+<p>Additionally, please see the Samples folder delivered in this SDK for additional Thermostat (V2) code examples.</p>
 
 <h4 id='thermostat-capabilities-thermostat-capabilities-lt-can_calibrate-gt-lt-can_calibrate-gt'><code>&lt;can_calibrate&gt;&lt;/can_calibrate&gt;</code></h4>
 
@@ -847,7 +851,7 @@ Your driver can facilitate communications with multiple types of proxies for a s
 
 <h4 id='thermostat-capabilities-thermostat-capabilities-lt-can_inc_dec_setpoints-gt-lt-can_inc_dec_setpoints-gt'><code>&lt;can_inc_dec_setpoints&gt;&lt;/can_inc_dec_setpoints&gt;</code></h4>
 
-<p>Boolean indicating if the device has internal commands to increment and decrement both heat and cool setpoints independently. If false the proxy will take the current setpoint and +/i 1 (or the resolution) and send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> command with the new setpoint value, which could potentially send 81 three times if someone did programming of Increment Setpoint and the current setpoint was 80, rather than sending 83 as someone might expect from Composer Programming of 3 increment commands without a sleep between that provides enough time for the hardware to set each increment and return the new setpoint to director before the next Increment occurs.</p>
+<p>Boolean indicating if the device has internal commands to increment and decrement both heat and cool set points independently. If false the proxy will take the current setpoint and +/i 1 (or the resolution) and send a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> command with the new setpoint value, which could potentially send 81 three times if someone did programming of Increment Setpoint and the current setpoint was 80, rather than sending 83 as someone might expect from Composer Programming of 3 increment commands without a sleep between that provides enough time for the hardware to set each increment and return the new setpoint to director before the next Increment occurs.</p>
 
 <h4 id='thermostat-capabilities-thermostat-capabilities-lt-can_lock_buttons-gt-lt-can_lock_buttons-gt'><code>&lt;can_lock_buttons&gt;&lt;/can_lock_buttons&gt;</code></h4>
 
@@ -1841,7 +1845,9 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 
 <h2 id='thermostat-notifications-dynamic_capabilities_changed-tstat'>DYNAMIC_CAPABILITIES_CHANGED TSTAT</h2>
 
-<p>Dynamic Capabilities is a way for a protocol driver to send updates about some capabilities that can be changed when settings change on the hardware.  An example would be a thermostat that has a humidifier added would need to tell the proxy it can now do humidification as well as what the min, max and resolution of changes are for the setpoint. </p>
+<p>Dynamic Capabilities is a way for a protocol driver to send updates about some capabilities that can be changed when settings change on the hardware.  An example would be a thermostat that has a humidifier added would need to tell the proxy it can now do humidification as well as what the min, max, resolution and other changes are for the setpoint. </p>
+
+<p>Note the following is an example of the notification. For a complete list of Thermostat capabilities that can be passed as parameters, please see the Thermostat Proxy Capabilities section.</p>
 
 <h3 id='thermostat-notifications-dynamic_capabilities_changed-tstat-name'>Name</h3>
 
@@ -1855,24 +1861,24 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 </tr>
 </thead><tbody>
 <tr>
-<td><code>HAS_OUTDOOR_TEMPERATURE</code></td>
-<td>BOOL</td>
-<td>boolean to enable/disable <code>hasoutdoortemperature</code> capability, if the device supports this feature, default is false.</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td><code>CAN_CHANGE_SCALE</code></td>
-<td>BOOL</td>
-<td>boolean to enable/disable Navigators UI&#39;s and composer from being able to change the scale of the hardware.</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><code>HAS_HUMIDITY</code></td>
 <td>BOOL</td>
-<td>boolean to enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_humidity</code></a> capability, if the device supports this feature, default is false</td>
+<td>boolean to enable/disable <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities"><code>has_humidity</code></a> capability, if the device supports this feature, default is false.</td>
 </tr>
 <tr>
-<td><code>HAS_SINGLE_SETPOINT</code></td>
-<td>BOOL</td>
-<td>Boolean used to turn single setpoint mode to on or off. Defaults to false (off).</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><code>HUMIDIFY_SETPOINT_MIN</code></td>
@@ -1898,16 +1904,6 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 <td><code>DEHUMIDIFY_SETPOINT_MIN</code>:</td>
 <td>INT</td>
 <td>Minimum Setpoint, int 0-100 that will do the same thing as the <code>setpoint_dehumidify_min</code> capability, default 0</td>
-</tr>
-<tr>
-<td><code>DEHUMIDIFY_SETPOINT_MAX</code></td>
-<td>INT</td>
-<td>Minimum Setpoint, int 0-100 that will do the same thing as the <code>setpoint_dehumidify_max</code> capability, default 100</td>
-</tr>
-<tr>
-<td><code>DEHUMIDIFY_SETPOINT_RESOLUTION</code></td>
-<td>INT</td>
-<td>What increment to use (ie 1,3,5,10,etc), will do the same thing as the <code>setpoint_dehumidify_resolution</code> capability, default 1</td>
 </tr>
 </tbody></table>
 
