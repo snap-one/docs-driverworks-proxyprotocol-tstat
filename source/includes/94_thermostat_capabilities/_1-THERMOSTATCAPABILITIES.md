@@ -138,24 +138,24 @@ This is a comma delimited list that represents all of the possible states that t
 Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note that .2 is the lowest C resolution supported. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][25] notification.
 
 
-`<outdoor_temperature_resolution_f></outdoor_temperature_resolution_f>`
+#### `<outdoor_temperature_resolution_f></outdoor_temperature_resolution_f>`
 Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note .2 is the lowest F resolution supported. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][26] notification.
 
 
-`<preset_fields></preset_fields>`
+#### `<preset_fields></preset_fields>`
 XML of fields for settings that are potentially unique to the protocol driver, yet will be displayed in the UI during the creation or modification of presets for scheduling. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][27] notification.
 
 
-`<scheduling></scheduling>`
+#### `<scheduling></scheduling>`
 A boolean indicating if the device supports a programmed schedule. If it is true, it should have a `schedule_default entry` in its c4z file. Also mutually exclusive to Preset Scheduling and use of this is discouraged.
 
 
-`<schedule_default></schedule_default>`
+#### `<schedule_default></schedule_default>`
 An XML block indicating the default schedule for the device.  Mutually exclusive to Preset Scheduling and use of this is discouraged.
 
 
-`<schedule_entry></schedule_entry>`
-There is one of these entries for each schedule entry during the day. In the example used here, there are six of them. Name indicates the name of the entry that will show up in composer and navigator. Time indicates what time during the day this entry will become active. The time units are minutes since midnight, so 360 means 6:00AM. Enabled indicates whether or not this entry is initially enabled or not. Valid values: True/False. See example to the right.
+#### `<schedule_entry></schedule_entry>`
+There is one of these entries for each schedule entry during the day. In the example used here, there are six of them. Name indicates the name of the entry that will show up in composer and navigator. Time indicates what time during the day this entry will become active. The time units are minutes since midnight, so 360 means 6:00AM. Enabled indicates whether or not this entry is initially enabled or not. Valid values: True/False. See the example below.
 
 
 ```xml
@@ -171,120 +171,120 @@ There is one of these entries for each schedule entry during the day. In the exa
 ```
 
 
-`<setpoint_cool_max></setpoint_cool_max>`
+#### `<setpoint_cool_max></setpoint_cool_max>`
 Integer indicating the highest temperature the cool setpoint can be configured as. Default is 89. If used,`_f `and `_c` do not need to be set but since this value is Celsius x 10, it will result in a potentially undesired Fahrenheit conversion.  This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][28] notification.
 
 
-`<setpoint_cool_max_c></setpoint_cool_max_c>`
+#### `<setpoint_cool_max_c></setpoint_cool_max_c>`
 Integer indicating the highest temperature the cool setpoint can be configured as. Default is 90. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][29] notification.
 
 
 
-`<setpoint_cool_max_f></setpoint_cool_max_f>`
+#### `<setpoint_cool_max_f></setpoint_cool_max_f>`
 Integer indicating the highest temperature the cool setpoint can be configured as. Default is 89. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][30] notification.
 
 
-`<setpoint_cool_min></setpoint_cool_min>`
+#### `<setpoint_cool_min></setpoint_cool_min>`
 Integer indicating the lowest temperature the cool setpoint can be configured as. Default is 39. If used,`_f` and `_c` do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][31] notification.
 
 
-`<setpoint_cool_min_c></setpoint_cool_min_c>`
+#### `<setpoint_cool_min_c></setpoint_cool_min_c>`
  Integer indicating the lowest temperature the cool setpoint can be configured as. Default is 42. If used, `_f` and `_c` do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][32] notification.
 
 
-`<setpoint_cool_min_f></setpoint_cool_min_f>`
+#### `<setpoint_cool_min_f></setpoint_cool_min_f>`
 Integer indicating the lowest temperature the cool setpoint can be configured as. Default is 42. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][33]  notification.
 
 
-`<setpoint_cool_resolution_c></setpoint_cool_resolution_c>`
+#### `<setpoint_cool_resolution_c></setpoint_cool_resolution_c>`
 Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a C notification.
 
 
-`<setpoint_cool_resolution_f></setpoint_cool_resolution_f>`
+#### `<setpoint_cool_resolution_f></setpoint_cool_resolution_f>`
 Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][34] notification.
 
 
-`<setpoint_heatcool_deadband_c></setpoint_heatcool_deadband_c>`
+#### `<setpoint_heatcool_deadband_c></setpoint_heatcool_deadband_c>`
 Double indicating the deadband range in Celcius that the hardware requires between heat and cool.  Default is 2.  Default is 2.  Post operating system 2.7.0, UI's will show both heat and cool setpoints moving if in Auto and the movement will be based on this deadband value. If a user tries to move heat above cool or cool below heat, the UI's will only send the setpoint command for the primarily moving setpoint.  A protocol driver will need to send two notifies back, one for heat and one for cool if in fact both setpoints were changed on the hardware. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][35] notification.
 
 
-`<setpoint_heatcool_deadband_f></setpoint_heatcool_deadband_f>`
+#### `<setpoint_heatcool_deadband_f></setpoint_heatcool_deadband_f>`
 Double indicating the deadband range in Fahrenheit  that the hardware requires between heat and cool.  Default is 2.  Post operating system 2.7.0, UI's will show both heat and cool setpoints moving if in Auto and the movement will be based on this deadband value. If a user tries to move heat above cool or cool below heat, the UI's will only send the setpoint command for the primarily moving setpoint.  A protocol driver will need to send two notifies back, one for heat and one for cool if in fact both setpoints were changed on the hardware. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][36] notification.
 
 
-`<setpoint_heat_max></setpoint_heat_max>`
+#### `<setpoint_heat_max></setpoint_heat_max>`
 Integer indicating the highest temperature the heat setpoint can be configured as. Default is 88. If used, `_f `and`_c` do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][37] notification.
 
 
-`<setpoint_heat_max_c></setpoint_heat_max_c>`
+#### `<setpoint_heat_max_c></setpoint_heat_max_c>`
 Integer indicating the highest temperature the heat setpoint can be configured as. Default is 31. Best to use `_f `and `_c` and not the older celsius x 10 capability.  This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][38] notification.
 
 
-`<setpoint_heat_max_f></setpoint_heat_max_f>`
+#### `<setpoint_heat_max_f></setpoint_heat_max_f>`
 Integer indicating the highest temperature the heat setpoint can be configured as. Default is 89. Best to use `_f `and `_c` and not the older celsius x 10 capability.  This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][39] notification.
 
 
-`<setpoint_heat_min></setpoint_heat_min>`
+#### `<setpoint_heat_min></setpoint_heat_min>`
 Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 40. If used, `_f` and `_c `do not need to be set but since this value is Celsius x 10 it will result in a potentially undesired Fahrenheit conversion. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][40] notification.
 
 
-`<setpoint_heat_min_c></setpoint_heat_min_c>`
+#### `<setpoint_heat_min_c></setpoint_heat_min_c>`
 Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 4. Best to use `_f` and `_c` and not the older Celsius x 10 capability. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][41] notification.
 
 
-`<setpoint_heat_min_f></setpoint_heat_min_f>`
+#### `<setpoint_heat_min_f></setpoint_heat_min_f>`
 Integer indicating the lowest temperature the heat setpoint can be configured as. Default is 38. Best to use `_f` and `_c` and not the older celsius x 10 capability. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][42] notification.
 
 
-`<setpoint_heat_resolution_c></setpoint_heat_resolution_c>`
+#### `<setpoint_heat_resolution_c></setpoint_heat_resolution_c>`
 Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][43] notification.
 
 
-`<setpoint_heat_resolution_f></setpoint_heat_resolution_f>`
+#### `<setpoint_heat_resolution_f></setpoint_heat_resolution_f>`
 Double indicating the increments that the setpoint will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][44] notification.
 
 
-`<setpoint_dehumidify_max></setpoint_dehumidify_max>`
+#### `<setpoint_dehumidify_max></setpoint_dehumidify_max>`
 Integer indicating the highest dehumidify setpoint, default 100.  This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][45] notification.
 
 
-`<setpoint_dehumidify_min></setpoint_dehumidify_min>`
+#### `<setpoint_dehumidify_min></setpoint_dehumidify_min>`
 Integer indicating the lowest dehumidify setpoint, default 0.  This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][46] notification.
 
 
-`<setpoint_humidify_min></setpoint_humidify_min>`
+#### `<setpoint_humidify_min></setpoint_humidify_min>`
 Integer indicating the lowest humidify setpoint, default 0. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][47] notification.
 
 
-`<setpoint_humidify_max></setpoint_humidify_max>`
+#### `<setpoint_humidify_max></setpoint_humidify_max>`
 Integer indicating the highest humidify setpoint, default 100. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][48] notification.
 
 
-`<setpoint_humidify_resolution></setpoint_humidify_resolution>`
+#### `<setpoint_humidify_resolution></setpoint_humidify_resolution>`
 Integer indicating the increments that the setpoint will follow, Default is 1. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][49] notification.
 
 
-`<setpoint_dehumidify_resolution></setpoint_dehumidify_resolution>`
+#### `<setpoint_dehumidify_resolution></setpoint_dehumidify_resolution>`
  Integer indicating the increments that the setpoint will follow, Default is 1. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][50] notification.
 
 
-`<setpoint_single_max_c></setpoint_single_max_c>`
+#### `<setpoint_single_max_c></setpoint_single_max_c>`
 Integer indicating the highest temperature the single setpoint can be configured as. Default is 32. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][51] notification.
 
 
-`<setpoint_single_max_f></setpoint_single_max_f>`
+#### `<setpoint_single_max_f></setpoint_single_max_f>`
 Integer indicating the highest temperature the single setpoint can be configured as. Default is 90. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][52] notification.
 
 
-`<setpoint_single_min_c></setpoint_single_min_c>`
+#### `<setpoint_single_min_c></setpoint_single_min_c>`
 Integer indicating the lowest temperature the single setpoint can be configured as. Default is 4. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][53] notification.
 
 
-`<setpoint_single_min_f></setpoint_single_min_f>`
+#### `<setpoint_single_min_f></setpoint_single_min_f>`
 Integer indicating the lowest temperature the single setpoint can be configured as. Default is 38. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][54] notification.
 
 
-`<setpoint_heat_resolution_f></setpoint_heat_resolution_f>`
+#### `<setpoint_heat_resolution_f></setpoint_heat_resolution_f>`
 Double indicating the increments that the setpoint will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note .2 is the lowest F resolution supported. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][55] notification.
 
 
