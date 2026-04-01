@@ -1,6 +1,6 @@
-## DYNAMIC\_CAPABILITIES\_CHANGED TSTAT
+## DYNAMIC\_CAPABILITIES\_CHANGED
 
-Dynamic Capabilities is a way for a protocol driver to send updates about some capabilities that can be changed when settings change on the hardware.  An example would be a thermostat that has a humidifier added would need to tell the proxy it can now do humidification as well as what the min, max, resolution and other changes are for the setpoint. 
+Dynamic Capabilities is a way for a protocol driver to send updates about some thermostat capabilities that can be changed when settings change on the hardware.  An example would be a thermostat that has a humidifier added would need to tell the proxy it can now do humidification as well as what the min, max, resolution and other changes are for the setpoint. 
 
 Note the following is an example of the notification. For a complete list of Thermostat capabilities that can be passed as parameters, please see the Thermostat Proxy Capabilities section.
 
