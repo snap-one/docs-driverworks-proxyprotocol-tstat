@@ -489,7 +489,7 @@
                     <a href="#thermostat-notifications-dehumidify_setpoint-_resolution" class="toc-h2 toc-link" data-title="DEHUMIDIFY_SETPOINT _RESOLUTION">DEHUMIDIFY_SETPOINT _RESOLUTION</a>
                   </li>
                   <li>
-                    <a href="#thermostat-notifications-dynamic_capabilities_changed-tstat" class="toc-h2 toc-link" data-title="DYNAMIC_CAPABILITIES_CHANGED TSTAT">DYNAMIC_CAPABILITIES_CHANGED TSTAT</a>
+                    <a href="#thermostat-notifications-dynamic_capabilities_changed" class="toc-h2 toc-link" data-title="DYNAMIC_CAPABILITIES_CHANGED">DYNAMIC_CAPABILITIES_CHANGED</a>
                   </li>
                   <li>
                     <a href="#thermostat-notifications-extras_setup_changed" class="toc-h2 toc-link" data-title="EXTRAS_SETUP_CHANGED">EXTRAS_SETUP_CHANGED</a>
@@ -1843,13 +1843,13 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 
 <p><code>None</code></p>
 
-<h2 id='thermostat-notifications-dynamic_capabilities_changed-tstat'>DYNAMIC_CAPABILITIES_CHANGED TSTAT</h2>
+<h2 id='thermostat-notifications-dynamic_capabilities_changed'>DYNAMIC_CAPABILITIES_CHANGED</h2>
 
-<p>Dynamic Capabilities is a way for a protocol driver to send updates about some capabilities that can be changed when settings change on the hardware.  An example would be a thermostat that has a humidifier added would need to tell the proxy it can now do humidification as well as what the min, max, resolution and other changes are for the setpoint. </p>
+<p>Dynamic Capabilities is a way for a protocol driver to send updates about some thermostat capabilities that can be changed when settings change on the hardware.  An example would be a thermostat that has a humidifier added would need to tell the proxy it can now do humidification as well as what the min, max, resolution and other changes are for the setpoint. </p>
 
 <p>Note the following is an example of the notification. For a complete list of Thermostat capabilities that can be passed as parameters, please see the Thermostat Proxy Capabilities section.</p>
 
-<h3 id='thermostat-notifications-dynamic_capabilities_changed-tstat-name'>Name</h3>
+<h3 id='thermostat-notifications-dynamic_capabilities_changed-name'>Name</h3>
 
 <p><code>DYNAMIC_CAPABILITIES_CHANGED ()</code></p>
 
@@ -1907,7 +1907,7 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 </tr>
 </tbody></table>
 
-<h3 id='thermostat-notifications-dynamic_capabilities_changed-tstat-returns'>Returns</h3>
+<h3 id='thermostat-notifications-dynamic_capabilities_changed-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
