@@ -893,48 +893,62 @@ Your driver can facilitate communications with multiple types of proxies for a s
 
 <p>This is a comma delimited list of all the possible states that the HVAC system fan supports. For example: Off, On, Low, Med, Circulate with no spaces after the commas. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
-<p><code>&lt;has_humidity&gt;&lt;/has_humidity&gt;</code>
-Boolean indicating if the device can report the current humidity. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-has_humidity-gt-lt-has_humidity-gt'><code>&lt;has_humidity&gt;&lt;/has_humidity&gt;</code></h4>
 
-<p><code>&lt;has_extras&gt;&lt;/has_extras&gt;</code>
-Boolean indicating if the device has extras commands support. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+<p>Boolean indicating if the device can report the current humidity. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
-<p><code>&lt;has_connection_status&gt;&lt;/has_connection_status&gt;</code>
-Boolean indicating if the device reports online/offline status of the hardware device, this is often forgotten about but very important to implement in new protocol drivers drivers.</p>
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-has_extras-gt-lt-has_extras-gt'><code>&lt;has_extras&gt;&lt;/has_extras&gt;</code></h4>
 
-<p><code>&lt;has_outdoor_temperature&gt;&lt;/has_outdoor_temperature&gt;</code>
-Boolean indicating if the device can provide an outdoor temperature. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+<p>Boolean indicating if the device has extras commands support. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
-<p><code>&lt;has_remote_sensor&gt;&lt;/has_remote_sensor&gt;</code>
-Indicates if this thermostat has a remote sensor. Valid values: True/False.</p>
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-has_connection_status-gt-lt-has_connection_status-gt'><code>&lt;has_connection_status&gt;&lt;/has_connection_status&gt;</code></h4>
 
-<p><code>&lt;has_single_setpoint&gt;&lt;/has_single_setpoint&gt;</code>
- Boolean indicating if the device is single setpoint.  <code>can_heat, can_cool</code> and <code>can_auto</code> should be set to false if this option is used. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification. This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
+<p>Boolean indicating if the device reports online/offline status of the hardware device, this is often forgotten about but very important to implement in new protocol drivers drivers.</p>
 
-<p><code>&lt;has_temperature&gt;&lt;/has_temperature&gt;</code>
-Boolean indicating if the device can provide a temperature of the thermostat/room. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-has_outdoor_temperature-gt-lt-has_outdoor_temperature-gt'><code>&lt;has_outdoor_temperature&gt;&lt;/has_outdoor_temperature&gt;</code></h4>
 
-<p><code>&lt;has_vacation_mode&gt;&lt;/has_vacation_mode&gt;</code>
-Indicates if this thermostat supports vacation mode Valid values: True/False
+<p>Boolean indicating if the device can provide an outdoor temperature. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-has_remote_sensor-gt-lt-has_remote_sensor-gt'><code>&lt;has_remote_sensor&gt;&lt;/has_remote_sensor&gt;</code></h4>
+
+<p>Indicates if this thermostat has a remote sensor. Valid values: True/False.</p>
+
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-has_single_setpoint-gt-lt-has_single_setpoint-gt'><code>&lt;has_single_setpoint&gt;&lt;/has_single_setpoint&gt;</code></h4>
+
+<p>Boolean indicating if the device is single setpoint.  <code>can_heat, can_cool</code> and <code>can_auto</code> should be set to false if this option is used. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification. This is older functionality that indicated to UI&#39;s and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver&#39;s configuration file.</p>
+
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-has_temperature-gt-lt-has_temperature-gt'><code>&lt;has_temperature&gt;&lt;/has_temperature&gt;</code></h4>
+
+<p>Boolean indicating if the device can provide a temperature of the thermostat/room. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-has_vacation_mode-gt-lt-has_vacation_mode-gt'><code>&lt;has_vacation_mode&gt;&lt;/has_vacation_mode&gt;</code></h4>
+
+<p>Indicates if this thermostat supports vacation mode Valid values: True/False
 The capability <code>has_vacation_mode</code> must be set to true for the vacation commands and notifications to be executed. Preset Scheduling and Vacation Mode are mutually exclusive and drivers should really use Preset Scheduling to accomplish what Vacation Mode has done in the past.</p>
 
-<p><code>&lt;hold_modes&gt;&lt;/hold_modes&gt;</code>
-This is a comma delimited list of the possible hold modes this thermostat supports. Valid values include: Off, 2 Hours, Until Next, Permanent with no spaces after the commas. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstatt"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-hold_modes-gt-lt-hold_modes-gt'><code>&lt;hold_modes&gt;&lt;/hold_modes&gt;</code></h4>
 
-<p><code>&lt;humidity_modes&gt;&lt;/humidity_modes&gt;</code>
-A comma separated list of all the modes the device supports. For example: &quot;Off,Humidify,Dehumidify,Auto&quot; with no spaces after the commas. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+<p>This is a comma delimited list of the possible hold modes this thermostat supports. Valid values include: Off, 2 Hours, Until Next, Permanent with no spaces after the commas. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstatt"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
-<p><code>&lt;humidity_states&gt;&lt;/humidity_states&gt;</code>
- A comma separated list of all the modes the device supports. Usually something like &quot;Off,Humidifying,Dehumidifying&quot;, with no spaces after the commas.</p>
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-humidity_modes-gt-lt-humidity_modes-gt'><code>&lt;humidity_modes&gt;&lt;/humidity_modes&gt;</code></h4>
 
-<p><code>&lt;hvac_modes&gt;&lt;/hvac_modes&gt;</code>
-A comma separated list of all the modes the device supports. For example:  &quot;Off,Heat,Cool&quot;, with no spaces after the commas.</p>
+<p>A comma separated list of all the modes the device supports. For example: &quot;Off,Humidify,Dehumidify,Auto&quot; with no spaces after the commas. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
-<p><code>&lt;hvac_states&gt;&lt;/hvac_states&gt;</code>
-This is a comma delimited list that represents all of the possible states that the HVAC system supports. For example: Off, Heat, Cool, Heating, Stage 1 Cool, etc with no spaces after the commas</p>
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-humidity_states-gt-lt-humidity_states-gt'><code>&lt;humidity_states&gt;&lt;/humidity_states&gt;</code></h4>
 
-<p><code>&lt;outdoor_temperature_resolution_c&gt;&lt;/outdoor_temperature_resolution_c&gt;</code>
-Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note that .2 is the lowest C resolution supported. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
+<p>A comma separated list of all the modes the device supports. Usually something like &quot;Off,Humidifying,Dehumidifying&quot;, with no spaces after the commas.</p>
+
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-hvac_modes-gt-lt-hvac_modes-gt'><code>&lt;hvac_modes&gt;&lt;/hvac_modes&gt;</code></h4>
+
+<p>A comma separated list of all the modes the device supports. For example:  &quot;Off,Heat,Cool&quot;, with no spaces after the commas.</p>
+
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-hvac_states-gt-lt-hvac_states-gt'><code>&lt;hvac_states&gt;&lt;/hvac_states&gt;</code></h4>
+
+<p>This is a comma delimited list that represents all of the possible states that the HVAC system supports. For example: Off, Heat, Cool, Heating, Stage 1 Cool, etc with no spaces after the commas</p>
+
+<h4 id='thermostat-capabilities-thermostat-capabilities-lt-outdoor_temperature_resolution_c-gt-lt-outdoor_temperature_resolution_c-gt'><code>&lt;outdoor_temperature_resolution_c&gt;&lt;/outdoor_temperature_resolution_c&gt;</code></h4>
+
+<p>Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note that .2 is the lowest C resolution supported. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
 
 <p><code>&lt;outdoor_temperature_resolution_f&gt;&lt;/outdoor_temperature_resolution_f&gt;</code>
 Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note .2 is the lowest F resolution supported. This capability can be changed through a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-notifications-dynamic_capabilities_changed-tstat"><code>DYNAMIC_CAPABILITIES_CHANGED</code> </a> notification.</p>
