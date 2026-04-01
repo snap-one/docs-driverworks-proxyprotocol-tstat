@@ -3,7 +3,7 @@
 The following Capabilities are supported with the Thermostat Proxy. Please see the Samples folder delivered in this SDK for additional Thermostat (V2) code examples.
 
 `<can_calibrate></can_calibrate>`
-Indicates if the device is capable of calibrating itself. Enables `SET_CALIBRATION` command. Valid values: True/False.
+Indicates if the device is capable of calibrating itself. Enables the `SET_CALIBRATION` command. Valid values: True/False.
 
 
 
