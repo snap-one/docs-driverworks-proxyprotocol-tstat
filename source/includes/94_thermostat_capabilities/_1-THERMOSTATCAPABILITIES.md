@@ -2,12 +2,12 @@
 
 The following Capabilities are supported with the Thermostat Proxy. Please see the Samples folder delivered in this SDK for additional Thermostat (V2) code examples.
 
-`<can_calibrate></can_calibrate>`
+#### `<can_calibrate></can_calibrate>`
 Indicates if the device is capable of calibrating itself. Enables the `SET_CALIBRATION` command. Valid values: True/False.
 
 
 
-`<can_change_scale></can_change_scale>`
+#### `<can_change_scale></can_change_scale>`
 Boolean to enable/disable Navigator UIs and ComposerPro from being able to change the scale of the hardware. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][1] notification.
 
 
