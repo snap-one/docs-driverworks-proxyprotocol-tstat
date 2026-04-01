@@ -3,24 +3,22 @@
 The following Capabilities are supported with the Thermostat Proxy. Please see the Samples folder delivered in this SDK for additional Thermostat (V2) code examples.
 
 `<can_calibrate></can_calibrate>`
-
 Indicates if the device is capable of calibrating itself. Enables `SET_CALIBRATION` command. Valid values: True/False.
 
 
 
 `<can_change_scale></can_change_scale>`
-
 Boolean to enable/disable Navigator UIs and ComposerPro from being able to change the scale of the hardware. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][1] notification.
 
 
 
 `<can_cool></can_cool>`
-
 Indicates if this thermostat supports cooling. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][2] notification.This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
 
 `<can_dehumidify></can_dehumidify>`
+
 Boolean to enable/disable `can_dehumidity` capability, if the device supports this feature, default is True. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][3] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
