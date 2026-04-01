@@ -12,73 +12,72 @@ Boolean to enable/disable Navigator UIs and ComposerPro from being able to chang
 
 
 
-`<can_cool></can_cool>`
+#### `<can_cool></can_cool>`
 Indicates if this thermostat supports cooling. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][2] notification.This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
 
-`<can_dehumidify></can_dehumidify>`
-
+#### `<can_dehumidify></can_dehumidify>`
 Boolean to enable/disable `can_dehumidity` capability, if the device supports this feature, default is True. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][3] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
-`<can_do_auto></can_do_auto>`
+#### `<can_do_auto></can_do_auto>`
  Indicates if this thermostat can automatically switch from heat to cool. If the device can deadband enforcement, it will be done on the UIs as specified with the deadband capabilities. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][4] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
-`<can_heat></can_heat>`
+#### `<can_heat></can_heat>`
 Indicates if this thermostat supports heating. Valid values: True/False. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][5] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
-`<can_humidify></can_humidify>`
+#### `<can_humidify></can_humidify>`
 Boolean to enable/disable `can_humidity` capability, if the device supports this feature, default is True.  This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][6] notification. This is older functionality that indicated to UI's and Programming that the device could execute this functionality.  However, their limitation is that they do not take into account if the current HVAC mode supported them.  HVAC Modes replaced their functionality, but older drivers still use them and they do work. Control4  recommends the use of HVAC Modes now and that this capability be set to false in the driver's configuration file.
 
 
-`<can_inc_dec_setpoints></can_inc_dec_setpoints>`
+#### `<can_inc_dec_setpoints></can_inc_dec_setpoints>`
 Boolean indicating if the device has internal commands to increment and decrement both heat and cool setpoints independently. If false the proxy will take the current setpoint and +/i 1 (or the resolution) and send a [`DYNAMIC_CAPABILITIES_CHANGED` ][7] command with the new setpoint value, which could potentially send 81 three times if someone did programming of Increment Setpoint and the current setpoint was 80, rather than sending 83 as someone might expect from Composer Programming of 3 increment commands without a sleep between that provides enough time for the hardware to set each increment and return the new setpoint to director before the next Increment occurs.
 
 
-`<can_lock_buttons></can_lock_buttons>`
+#### `<can_lock_buttons></can_lock_buttons>`
  Indicates if the buttons on the TSTAT can be locked out to prevent changes. Valid values: True/False.
 
 
-`<can_preset></can_preset>`
+#### `<can_preset></can_preset>`
 Boolean indicating if the device supports the preset functionality including `custom_fields`. This does not including scheduling as `preset_scheduling` is a feature that is currently not supported. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][8] notification.
 
 
-`<can_preset_schedule></can_preset_schedule>`
+#### `<can_preset_schedule></can_preset_schedule>`
 Boolean indicating if the thermostat will support the `SET_EVENTS` commands for running presets based on scheduling created in Navigators. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][9] notification.
 
 
-`<current_temperature_max_c></current_temperature_max_c>`
+#### `<current_temperature_max_c></current_temperature_max_c>`
 Double indicating the maximum temperature that the thermostat will report in C. Default is 48. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][10] notification.
 
 
-`<current_temperature_min_c></current_temperature_min_c>`
+#### `<current_temperature_min_c></current_temperature_min_c>`
 Double indicating the minimum temperature that the thermostat will report in C. Default is -40. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][11] notification.
 
 
-`<current_temperature_max_f></current_temperature_max_f>`
+#### `<current_temperature_max_f></current_temperature_max_f>`
 Double indicating the maximum temperature that the thermostat will report in F. Default is 120. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][12] notification.
 
 
-`<current_temperature_min_f></current_temperature_min_f>`
+#### `<current_temperature_min_f></current_temperature_min_f>`
 Double indicating the minimum temperature that the thermostat will report in F. Default is -40. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][13] notification.
 
 
-`<current_temperature_resolution_c></current_temperature_resolution_c>`
+#### `<current_temperature_resolution_c></current_temperature_resolution_c>`
 Double indicating the increments that the temperature will follow, such as .1, .5, 1, 2, 5, etc. Default is 1. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][14]notification.
 
 
-`<current_temperature_resolution_f></current_temperature_resolution_f>`
+#### `<current_temperature_resolution_f></current_temperature_resolution_f>`
 Double indicating the increments that the temperature will follow, such as .2, .5, 1, 2, 5, etc. Default is 1. Note .2 is the lowest F resolution supported. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][15] notification.
 
 
-`<fan_modes></fan_modes>`
+#### `<fan_modes></fan_modes>`
 This is a comma delimited list of possible fan modes this thermostat supports. For example: Auto, Low, Medium, High with no spaces after the comma. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][16] notification.
 
 
-`<fan_states></fan_states>`
+#### `<fan_states></fan_states>`
 This is a comma delimited list of all the possible states that the HVAC system fan supports. For example: Off, On, Low, Med, Circulate with no spaces after the commas. This capability can be changed through a [`DYNAMIC_CAPABILITIES_CHANGED` ][17] notification.
 
 
