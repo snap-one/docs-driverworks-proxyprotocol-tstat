@@ -1,1 +1,0 @@
-# Thermostat Unhandled Commands
