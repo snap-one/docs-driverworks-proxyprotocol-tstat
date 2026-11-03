@@ -934,7 +934,7 @@ Your driver can facilitate communications with multiple types of proxies for a s
 </ul>
 <h3 id='what-s-new-what-was-new-in-4-3-0-new-notifications'>New Notifications</h3>
 <ul>
-<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-can_fixed_schedule_and_presets">CAN_FIXED_SCHEDULE_AND_PRESETS</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities-thermostat-capabilities-can_fixed_schedule_and_presets">CAN_FIXED_SCHEDULE_AND_PRESETS</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-lock_screen_mode_changed">LOCK_SCREEN_MODE_CHANGED</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-schedule_entry_name_changed">SCHEDULE_ENTRY_NAME_CHANGED</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-schedule_entry_deleted">SCHEDULE_ENTRY_DELETED</a></li>
@@ -951,21 +951,20 @@ Your driver can facilitate communications with multiple types of proxies for a s
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-lock_screen_modes">LOCK_SCREEN_MODES</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-has_schedule">HAS_SCHEDULE</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-hold_until_resolution">HOLD_UNTIL_RESOLUTION</a></li>
-<li>[HOLD_UNTIL_MODE][158]</li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-hold_until_mode">HOLD_UNTIL_MODE</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-humidity_resolution">HUMIDITY_RESOLUTION</a></li>
 </ul>
 <h3 id='what-s-new-what-was-new-in-4-3-0-new-commands'>New Commands</h3>
 <ul>
-<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-set_lock_screeen_mode">SET_LOCK_SCREEN_MODE</a></li>
-<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-update_schedule_name">UPDATE_SCHEDULE_ENTRY_NAME</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-set_lock_screen_mode">SET_LOCK_SCREEN_MODE</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-update_schedule_entry_name">UPDATE_SCHEDULE_ENTRY_NAME</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-delete_schedule_entry">DELETE_SCHEDULE_ENTRY</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-restore_schedule_entry">RESTORE_SCHEDULE_ENTRY</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_rename">PRESET_RENAME</a></li>
-<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_add">RESTORE_SCHEDULE_ENTRY</a></li>
 </ul>
 <h3 id='what-s-new-what-was-new-in-4-3-0-modified-commands'>Modified Commands</h3>
 <ul>
-<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_add">SET_MODE_HOLD</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-set_mode_hold">SET_MODE_HOLD</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_add">PRESET_ADD</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_delete">PRESET_DELETE</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_modify">PRESET_MODIFY</a></li>
@@ -1842,9 +1841,9 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 
 <p>There are two types of capabilities, static and dynamic. </p>
 
-<p>Static capabilities are defined in the <code>&lt;capabilities&gt;</code> section of the driver&#39;s driver.xml file and are immutable. For a complete list of Thermostat capabilities, please see the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities">Thermostat Proxy Capabilities</a> section.</p>
+<p>Static capabilities are defined in the <code>&lt;capabilities&gt;</code> section of the driver&#39;s driver.xml file and are immutable. For a complete list of Thermostat capabilities, please see the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">Thermostat Proxy Capabilities</a> section.</p>
 
-<p>Dynamic capabilities, as discussed in this section, are updated by the driver through the C4:SendToProxy() command. See the Lua Example below.  A Lua table needs to be created defining the parameter name and it&#39;s value.  Dynamic capabilities are not required to be in the driver.xml file. If it is not included it will initialize with the default value and can be updated at any time by the driver. If the thermostat device does not support changing the configuration then it is recommended it be used as a static capability. Listed in the table below are all of the possible <code>DYNAMIC_CAPABILITIES_CHANGED</code> notification parameters. The Capability column lists the capability associated with the notification that will be updated. For a more detailed list of the Dynamic Capability Notifications, please see  <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-protocol-dynamic-notifications">Thermostat Dynamic Notifications</a> section.</p>
+<p>Dynamic capabilities, as discussed in this section, are updated by the driver through the C4:SendToProxy() command. See the Lua Example below.  A Lua table needs to be created defining the parameter name and it&#39;s value.  Dynamic capabilities are not required to be in the driver.xml file. If it is not included it will initialize with the default value and can be updated at any time by the driver. If the thermostat device does not support changing the configuration then it is recommended it be used as a static capability. Listed in the table below are all of the possible <code>DYNAMIC_CAPABILITIES_CHANGED</code> notification parameters. The Capability column lists the capability associated with the notification that will be updated. For a more detailed list of the Dynamic Capability Notifications, please see  <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications">Thermostat Dynamic Notifications</a> section.</p>
 
 <h3 id='thermostat-notifications-dynamic_capabilities_changed-name'>Name</h3>
 
@@ -2077,7 +2076,7 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 <td><code>hold_until_resolution</code></td>
 </tr>
 <tr>
-<td><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-humidity_setpoints_deadband">HUMIDITY_SETPOINTS_DEADBAND</a></td>
+<td><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-humidity_setpoint_deadband">HUMIDITY_SETPOINTS_DEADBAND</a></td>
 <td>INT</td>
 <td>10</td>
 <td><code>setpoint_humidity_deadband</code></td>
@@ -6271,7 +6270,7 @@ Note: Temperature units are stored and processed in the proxy as current units, 
 <strong>Type:</strong> string
 <strong>Read Only:</strong> true
 <strong>Hidden:</strong> false
-<strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-fan_mode_changed">FAN_MODE_CHANGED</a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_fan_modes-_changed">ALLOWED_FAN_MODES_CHANGED</a>, and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-fan_mode_changed">FAN_MODE_CHANGED</a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_fan_modes_changed">ALLOWED_FAN_MODES_CHANGED</a>, and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-fan_modes_list'>FAN_MODES_LIST</h3>
 
@@ -6281,7 +6280,7 @@ Note: Temperature units are stored and processed in the proxy as current units, 
 <strong>Type:</strong> string
 <strong>Read Only:</strong> true
 <strong>Hidden:</strong> true
-<strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_fan_modes-_changed">ALLOWED_FAN_MODES_CHANGED</a> notification</p>
+<strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_fan_modes_changed">ALLOWED_FAN_MODES_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-fan_state'>FAN_STATE</h3>
 
