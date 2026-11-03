@@ -59,7 +59,6 @@ Dynamic capabilities, as discussed in this section, are updated by the driver th
 | [HUMIDIFY_SETPOINT_MAX][40]            | INT    | 100         | `setpoint_humidify_max`            |
 | [HUMIDIFY_SETPOINT_MIN][41]            | INT    | 0           | `setpoint_humidify_min`            |
 | [HUMIDIFY_SETPOINT_RESOLUTION][42]     | INT    | 1           | `setpoint_humidify_resolution`     |
-| [HUMIDITY_RESOLUTION][43]              | INT    | 1           | `humidity_resolution`              |
 | [LOCK_SCREEN_MODES][44]                | STRING | ""          | `lock_screen_modes`                |
 | [OUTDOOR_TEMPERATURE_RESOLUTION_C][45] | INT    | 1           | `outdoor_temperature_resolution_c` |
 | [OUTDOOR_TEMPERATURE_RESOLUTION_F][46] | INT    | 1           | `outdoor_temperature_resolution_f` |
@@ -134,10 +133,9 @@ C4:SendToProxy(bindingID, "DYNAMIC_CAPABILITIES_CHANGED", Params, "NOTIFY")
 [37]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-hold_until_mode
 [38]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-hold_until_resolution
 [39]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-humidity_setpoint_deadband
-[40]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-humidify_setpoint_max
+[40]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-humidity_setpoint_max
 [41]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-humidify_setpoint_min
 [42]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-humidify_setpoint_resolution
-[43]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-humidity_resolution
 [44]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-lock_screen_modes
 [45]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-outdoor_temperature_resolution_c
 [46]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-outdoor_temperature_resolution_f

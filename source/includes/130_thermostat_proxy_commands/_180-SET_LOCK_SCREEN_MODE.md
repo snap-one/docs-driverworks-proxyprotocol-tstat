@@ -1,12 +1,17 @@
+## SET_LOCK_SCREEN_MODE
+
+Sets the Lock Screen Mode on the thermostat.
+
+
 ### Name
 
 `SET_LOCK_SCREEN_MODE ()`
 
 ### Parameters
 
-|Parameter|Type|Description|
-|---|---|---|
-|`MODE`|STR|Required. The lock screen mode to apply.|
+| Parameter | Type | Description                              |
+| --------- | ---- | ---------------------------------------- |
+| `MODE`    | STR  | Required. The lock screen mode to apply. |
 
 ### Notes
 

@@ -1,3 +1,8 @@
+## SCHEDULE_ENTRY_DELETED
+
+Notification that should be sent to the proxy when a schedule entry is deleted.
+
+
 ### Name
 
 `SCHEDULE_ENTRY_DELETED` This notification is new in 4.3.0.
