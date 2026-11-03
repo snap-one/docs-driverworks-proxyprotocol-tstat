@@ -378,7 +378,7 @@ Vacation mode state.
 [3]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_change
 [4]:  https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-heat_setpoint_changed
 [5]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-temperature_changed
-[6]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_fan_modes-_changed
+[6]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_fan_modes_changed
 [7]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info
 [8]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-fan_state_change
 [9]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dynamic_capabilities_changed
@@ -388,7 +388,6 @@ Vacation mode state.
 [13]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidity_mode_changed
 [14]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_humidity_modes_changed
 [15]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidity_state_changed
-[20]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-heat_pump_mode
 [21]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_hold_modes_changed
 [22]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-hvac_mode_changed
 [23]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_hvac_modes_changed
@@ -398,7 +397,6 @@ Vacation mode state.
 [27]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-message_changed
 [28]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-outdoor_temperature_changed
 [29]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-preset_changed
-[31]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-reversing_valve
 [32]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-scale_changed
 [34]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-schedule_entry_changed
 [35]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-single_setpoint_changed
