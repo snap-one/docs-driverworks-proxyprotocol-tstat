@@ -19,7 +19,6 @@
 - [LOCK_SCREEN_MODE_CHANGED][3]
 
 ### New Notifications
-- [CAN_FIXED_SCHEDULE_AND_PRESETS][4]
 - [LOCK_SCREEN_MODE_CHANGED][5]
 - [SCHEDULE_ENTRY_NAME_CHANGED][6]
 - [SCHEDULE_ENTRY_DELETED][7]
@@ -36,10 +35,10 @@
 - [HAS_SCHEDULE][13]
 - [HOLD_UNTIL_RESOLUTION][14]
 - [HOLD_UNTIL_MODE][15]
-- [HUMIDITY_RESOLUTION][16]
 
 ### New Commands
 - [SET_LOCK_SCREEN_MODE][17]
+- [UPDATE_SCHEDULE_ENTRY_ENABLED_FLAG][16]
 - [UPDATE_SCHEDULE_ENTRY_NAME][18]
 - [DELETE_SCHEDULE_ENTRY][19]
 - [RESTORE_SCHEDULE_ENTRY][20]
@@ -59,7 +58,6 @@
 [1]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities
 [2]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-variables
 [3]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-events
-[4]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities-thermostat-capabilities-can_fixed_schedule_and_presets
 [5]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-lock_screen_mode_changed
 [6]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-schedule_entry_name_changed
 [7]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-schedule_entry_deleted
@@ -71,18 +69,18 @@
 [13]:https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-has_schedule 
 [14]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-hold_until_resolution
 [15]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-hold_until_mode
-[16]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-humidity_resolution
+[16]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-update_schedule_entry_enabled_flag
 [17]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-set_lock_screen_mode
 [18]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-update_schedule_entry_name
 [19]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-delete_schedule_entry
 [20]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-restore_schedule_entry
 [21]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_rename
-[22]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-set_mode_hold
-[28]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_add
+[22]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-commands-not-handled-by-the-proxy
 [23]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_delete
 [24]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_modify
 [25]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_event_add
 [26]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_event_delete
 [27]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_event_modify
+[28]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_add
 
 
