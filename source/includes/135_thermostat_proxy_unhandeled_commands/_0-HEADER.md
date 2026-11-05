@@ -1,1 +1,0 @@
-# Thermostat Commands not Handled by the Proxy
