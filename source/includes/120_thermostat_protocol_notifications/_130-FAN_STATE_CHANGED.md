@@ -1,11 +1,11 @@
-## FAN\_STATE\_CHANGE
+## FAN_STATE_CHANGED
 
 Notification that should be sent to the proxy when the fan state has changed.
 
 
 ### Name
 
-`FAN_STATE_CHANGE ()`
+`FAN_STATE_CHANGED ()`
 
 
 | Parameter | Type | Description                   |

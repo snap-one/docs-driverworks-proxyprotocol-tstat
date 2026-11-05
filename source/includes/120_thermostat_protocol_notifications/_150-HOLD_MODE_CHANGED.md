@@ -8,14 +8,15 @@ Notification that should be sent to the proxy when hold mode has changed. Change
 `HOLD_MODE_CHANGED ()`
 
 
-| Parameter | Type | Description                                                                                                                                                                                                                                    |
-| --------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MODE      | STR  | One of the supported hold modes for example: Off, 2 Hours, Permanent. Required parameter options if Hold Mode is "Hold Until" : YEAR - integer 2000+,  MONTH - integer 0-11,  DAY - integer 0-31,  HOUR - integer 0-23, MINUTE - integer 0-60. |
+| Parameter | Type | Range     | Description                                                                              |
+| --------- | ---- | --------- | ---------------------------------------------------------------------------------------- |
+| MODE      | STR  |           | Required: Mode name. If MODE is "Hold Until" then the following parameters will be sent: |
+| YEAR      | INT  | 0-99 (YY) | Required if MODE is "Hold Until" and if `hold_until_mode` capability is "date,time".     |
+| MONTH     | INT  | 1-12      | Required if MODE is "Hold Until" and if `hold_until_mode` capability is "date,time".     |
+| DAY       | INT  | 1-31      | Required if MODE is "Hold Until" and if `hold_until_mode` capability is "date,time".     |
+| HOUR      | INT  | 0-23      | Required if MODE is "Hold Until".                                                        |
+| MINUTE    | INT  | 0-59      | Required if MODE is "Hold Until".                                                        |
 
-
-### Returns
-
-`None`
 
 
 [1]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-proxy-variables

@@ -125,8 +125,7 @@ Boolean indicating if the device can provide a temperature of the thermostat/roo
 
 
 ### has_vacation_mode
-Indicates if this thermostat supports vacation mode Valid values: True/False
-The capability `has_vacation_mode` must be set to true for the vacation commands and notifications to be executed. Preset Scheduling and Vacation Mode are mutually exclusive and drivers should really use Preset Scheduling to accomplish what Vacation Mode has done in the past.
+Vacation support has been deprecated. This capability should always be set to false.
 
 
 ### hold_modes
