@@ -450,7 +450,7 @@
                     <a href="#thermostat-notifications-cool_setpoint_changed" class="toc-h2 toc-link" data-title="COOL_SETPOINT_CHANGED">COOL_SETPOINT_CHANGED</a>
                   </li>
                   <li>
-                    <a href="#thermostat-notifications-dehumidify_setpoint_change" class="toc-h2 toc-link" data-title="DEHUMIDIFY_SETPOINT_CHANGE">DEHUMIDIFY_SETPOINT_CHANGE</a>
+                    <a href="#thermostat-notifications-dehumidify_setpoint_changed" class="toc-h2 toc-link" data-title="DEHUMIDIFY_SETPOINT_CHANGED">DEHUMIDIFY_SETPOINT_CHANGED</a>
                   </li>
                   <li>
                     <a href="#thermostat-notifications-dynamic_capabilities_changed" class="toc-h2 toc-link" data-title="DYNAMIC_CAPABILITIES_CHANGED">DYNAMIC_CAPABILITIES_CHANGED</a>
@@ -465,7 +465,7 @@
                     <a href="#thermostat-notifications-fan_mode_changed" class="toc-h2 toc-link" data-title="FAN_MODE_CHANGED">FAN_MODE_CHANGED</a>
                   </li>
                   <li>
-                    <a href="#thermostat-notifications-fan_state_change" class="toc-h2 toc-link" data-title="FAN_STATE_CHANGE">FAN_STATE_CHANGE</a>
+                    <a href="#thermostat-notifications-fan_state_changed" class="toc-h2 toc-link" data-title="FAN_STATE_CHANGED">FAN_STATE_CHANGED</a>
                   </li>
                   <li>
                     <a href="#thermostat-notifications-force_info" class="toc-h2 toc-link" data-title="FORCE_INFO">FORCE_INFO</a>
@@ -513,6 +513,9 @@
                     <a href="#thermostat-notifications-scale_changed" class="toc-h2 toc-link" data-title="SCALE_CHANGED">SCALE_CHANGED</a>
                   </li>
                   <li>
+                    <a href="#thermostat-notifications-scale_changed" class="toc-h2 toc-link" data-title="SCALE_CHANGED">SCALE_CHANGED</a>
+                  </li>
+                  <li>
                     <a href="#thermostat-notifications-schedule_entry_changed" class="toc-h2 toc-link" data-title="SCHEDULE_ENTRY_CHANGED">SCHEDULE_ENTRY_CHANGED</a>
                   </li>
                   <li>
@@ -529,12 +532,6 @@
                   </li>
                   <li>
                     <a href="#thermostat-notifications-temperature_changed" class="toc-h2 toc-link" data-title="TEMPERATURE_CHANGED">TEMPERATURE_CHANGED</a>
-                  </li>
-                  <li>
-                    <a href="#thermostat-notifications-vacation_mode" class="toc-h2 toc-link" data-title="VACATION_MODE">VACATION_MODE</a>
-                  </li>
-                  <li>
-                    <a href="#thermostat-notifications-vacation_setpoints" class="toc-h2 toc-link" data-title="VACATION_SETPOINTS">VACATION_SETPOINTS</a>
                   </li>
               </ul>
           </li>
@@ -718,7 +715,13 @@
                     <a href="#thermostat-proxy-commands-dec_setpoint_cool" class="toc-h2 toc-link" data-title="DEC_SETPOINT_COOL">DEC_SETPOINT_COOL</a>
                   </li>
                   <li>
+                    <a href="#thermostat-proxy-commands-dec_setpoint_dehumidify" class="toc-h2 toc-link" data-title="DEC_SETPOINT_DEHUMIDIFY">DEC_SETPOINT_DEHUMIDIFY</a>
+                  </li>
+                  <li>
                     <a href="#thermostat-proxy-commands-dec_setpoint_heat" class="toc-h2 toc-link" data-title="DEC_SETPOINT_HEAT">DEC_SETPOINT_HEAT</a>
+                  </li>
+                  <li>
+                    <a href="#thermostat-proxy-commands-dec_setpoint_humidify" class="toc-h2 toc-link" data-title="DEC_SETPOINT_HUMIDIFY">DEC_SETPOINT_HUMIDIFY</a>
                   </li>
                   <li>
                     <a href="#thermostat-proxy-commands-dec_setpoint_single" class="toc-h2 toc-link" data-title="DEC_SETPOINT_SINGLE">DEC_SETPOINT_SINGLE</a>
@@ -733,7 +736,13 @@
                     <a href="#thermostat-proxy-commands-inc_setpoint_cool" class="toc-h2 toc-link" data-title="INC_SETPOINT_COOL">INC_SETPOINT_COOL</a>
                   </li>
                   <li>
+                    <a href="#thermostat-proxy-commands-inc_setpoint_dehumidify" class="toc-h2 toc-link" data-title="INC_SETPOINT_DEHUMIDIFY">INC_SETPOINT_DEHUMIDIFY</a>
+                  </li>
+                  <li>
                     <a href="#thermostat-proxy-commands-inc_setpoint_heat" class="toc-h2 toc-link" data-title="INC_SETPOINT_HEAT">INC_SETPOINT_HEAT</a>
+                  </li>
+                  <li>
+                    <a href="#thermostat-proxy-commands-inc_setpoint_humidify" class="toc-h2 toc-link" data-title="INC_SETPOINT_HUMIDIFY">INC_SETPOINT_HUMIDIFY</a>
                   </li>
                   <li>
                     <a href="#thermostat-proxy-commands-inc_setpoint_single" class="toc-h2 toc-link" data-title="INC_SETPOINT_SINGLE">INC_SETPOINT_SINGLE</a>
@@ -769,13 +778,49 @@
                     <a href="#thermostat-proxy-commands-set_calibration" class="toc-h2 toc-link" data-title="SET_CALIBRATION">SET_CALIBRATION</a>
                   </li>
                   <li>
+                    <a href="#thermostat-proxy-commands-set_event" class="toc-h2 toc-link" data-title="SET_EVENT">SET_EVENT</a>
+                  </li>
+                  <li>
+                    <a href="#thermostat-proxy-commands-set_events" class="toc-h2 toc-link" data-title="SET_EVENTS">SET_EVENTS</a>
+                  </li>
+                  <li>
                     <a href="#thermostat-proxy-commands-set_lock_screen_mode" class="toc-h2 toc-link" data-title="SET_LOCK_SCREEN_MODE">SET_LOCK_SCREEN_MODE</a>
+                  </li>
+                  <li>
+                    <a href="#thermostat-proxy-commands-set_mode_fan" class="toc-h2 toc-link" data-title="SET_MODE_FAN">SET_MODE_FAN</a>
+                  </li>
+                  <li>
+                    <a href="#thermostat-proxy-commands-set_mode_hold" class="toc-h2 toc-link" data-title="SET_MODE_HOLD">SET_MODE_HOLD</a>
+                  </li>
+                  <li>
+                    <a href="#thermostat-proxy-commands-set_mode_humidity" class="toc-h2 toc-link" data-title="SET_MODE_HUMIDITY">SET_MODE_HUMIDITY</a>
+                  </li>
+                  <li>
+                    <a href="#thermostat-proxy-commands-set_mode_hvac" class="toc-h2 toc-link" data-title="SET_MODE_HVAC">SET_MODE_HVAC</a>
+                  </li>
+                  <li>
+                    <a href="#thermostat-proxy-commands-set_preset" class="toc-h2 toc-link" data-title="SET_PRESET">SET_PRESET</a>
+                  </li>
+                  <li>
+                    <a href="#thermostat-proxy-commands-set_presets" class="toc-h2 toc-link" data-title="SET_PRESETS">SET_PRESETS</a>
+                  </li>
+                  <li>
+                    <a href="#thermostat-proxy-commands-set_remote_sensor" class="toc-h2 toc-link" data-title="SET_REMOTE_SENSOR">SET_REMOTE_SENSOR</a>
+                  </li>
+                  <li>
+                    <a href="#thermostat-proxy-commands-set_scale" class="toc-h2 toc-link" data-title="SET_SCALE">SET_SCALE</a>
                   </li>
                   <li>
                     <a href="#thermostat-proxy-commands-set_setpoint_cool" class="toc-h2 toc-link" data-title="SET_SETPOINT_COOL">SET_SETPOINT_COOL</a>
                   </li>
                   <li>
+                    <a href="#thermostat-proxy-commands-set_setpoint_dehumidify" class="toc-h2 toc-link" data-title="SET_SETPOINT_DEHUMIDIFY">SET_SETPOINT_DEHUMIDIFY</a>
+                  </li>
+                  <li>
                     <a href="#thermostat-proxy-commands-set_setpoint_heat" class="toc-h2 toc-link" data-title="SET_SETPOINT_HEAT">SET_SETPOINT_HEAT</a>
+                  </li>
+                  <li>
+                    <a href="#thermostat-proxy-commands-set_setpoint_humidify" class="toc-h2 toc-link" data-title="SET_SETPOINT_HUMIDIFY">SET_SETPOINT_HUMIDIFY</a>
                   </li>
                   <li>
                     <a href="#thermostat-proxy-commands-set_setpoint_single" class="toc-h2 toc-link" data-title="SET_SETPOINT_SINGLE">SET_SETPOINT_SINGLE</a>
@@ -785,14 +830,6 @@
                   </li>
                   <li>
                     <a href="#thermostat-proxy-commands-update_schedule_entry_name" class="toc-h2 toc-link" data-title="UPDATE_SCHEDULE_ENTRY_NAME">UPDATE_SCHEDULE_ENTRY_NAME</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#thermostat-commands-not-handled-by-the-proxy" class="toc-h1 toc-link" data-title="Thermostat Commands not Handled by the Proxy">Thermostat Commands not Handled by the Proxy</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#thermostat-commands-not-handled-by-the-proxy-commands-not-handled-by-the-proxy" class="toc-h2 toc-link" data-title="Commands Not Handled by the Proxy">Commands Not Handled by the Proxy</a>
                   </li>
               </ul>
           </li>
@@ -1108,8 +1145,7 @@ Your driver can facilitate communications with multiple types of proxies for a s
 
 <h3 id='thermostat-capabilities-thermostat-capabilities-has_vacation_mode'>has_vacation_mode</h3>
 
-<p>Indicates if this thermostat supports vacation mode Valid values: True/False
-The capability <code>has_vacation_mode</code> must be set to true for the vacation commands and notifications to be executed. Preset Scheduling and Vacation Mode are mutually exclusive and drivers should really use Preset Scheduling to accomplish what Vacation Mode has done in the past.</p>
+<p>Vacation support has been deprecated. This capability should always be set to false.</p>
 
 <h3 id='thermostat-capabilities-thermostat-capabilities-hold_modes'>hold_modes</h3>
 
@@ -1369,7 +1405,6 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 <li><p><code>IF_PRESET</code> - simple boolean test to see if the preset is in a given name.</p></li>
 <li><p><code>IF_SINGLE_SETPOINT</code> - numeric comparison against the current single setpoint.</p></li>
 <li><p><code>IF_TEMPERATURE</code> - simple integer test to see if the current temperature is a supplied value. No manipulation is done on the units for the temperature. If the thermostat is configured to be celsius, the value to compare it with should be in Celsius as well.</p></li>
-<li><p><code>IF_VACATION_MODE</code> - simple boolean test to see if the vacation mode is on/off.</p></li>
 </ul>
 <h1 id='thermostat-connections'>Thermostat Connections</h1>
 
@@ -1561,8 +1596,6 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 <p><code>HVAC State Changed</code> (Event=106)</p>
 
 <p><code>Fan State Changed</code> (Event=107)</p>
-
-<p><code>Vacation Mode Changed</code> (Event=108)</p>
 
 <p><code>Outdoor Temperature Changed</code> (Event=109)</p>
 
@@ -1813,13 +1846,13 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 
 <p>None</p>
 
-<h2 id='thermostat-notifications-dehumidify_setpoint_change'>DEHUMIDIFY_SETPOINT_CHANGE</h2>
+<h2 id='thermostat-notifications-dehumidify_setpoint_changed'>DEHUMIDIFY_SETPOINT_CHANGED</h2>
 
 <p>The dehumidify setpoint has changed.</p>
 
-<h3 id='thermostat-notifications-dehumidify_setpoint_change-name'>Name</h3>
+<h3 id='thermostat-notifications-dehumidify_setpoint_changed-name'>Name</h3>
 
-<p><code>DEHUMIDIFY_SETPOINT_CHANGE ()</code></p>
+<p><code>DEHUMIDIFY_SETPOINT_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
@@ -1833,7 +1866,7 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 </tr>
 </tbody></table>
 
-<h3 id='thermostat-notifications-dehumidify_setpoint_change-returns'>Returns</h3>
+<h3 id='thermostat-notifications-dehumidify_setpoint_changed-returns'>Returns</h3>
 
 <p><code>None
 </code></p>
@@ -2281,13 +2314,13 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 
 <p><code>None</code></p>
 
-<h2 id='thermostat-notifications-fan_state_change'>FAN_STATE_CHANGE</h2>
+<h2 id='thermostat-notifications-fan_state_changed'>FAN_STATE_CHANGED</h2>
 
 <p>Notification that should be sent to the proxy when the fan state has changed.</p>
 
-<h3 id='thermostat-notifications-fan_state_change-name'>Name</h3>
+<h3 id='thermostat-notifications-fan_state_changed-name'>Name</h3>
 
-<p><code>FAN_STATE_CHANGE ()</code></p>
+<p><code>FAN_STATE_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
@@ -2303,7 +2336,7 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 </tr>
 </tbody></table>
 
-<h3 id='thermostat-notifications-fan_state_change-returns'>Returns</h3>
+<h3 id='thermostat-notifications-fan_state_changed-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
@@ -2401,19 +2434,47 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 <tr>
 <th>Parameter</th>
 <th>Type</th>
+<th>Range</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>MODE</td>
 <td>STR</td>
-<td>One of the supported hold modes for example: Off, 2 Hours, Permanent. Required parameter options if Hold Mode is &quot;Hold Until&quot; : YEAR - integer 2000+,  MONTH - integer 0-11,  DAY - integer 0-31,  HOUR - integer 0-23, MINUTE - integer 0-60.</td>
+<td></td>
+<td>Required: Mode name. If MODE is &quot;Hold Until&quot; then the following parameters will be sent:</td>
+</tr>
+<tr>
+<td>YEAR</td>
+<td>INT</td>
+<td>0-99 (YY)</td>
+<td>Required if MODE is &quot;Hold Until&quot; and if <code>hold_until_mode</code> capability is &quot;date,time&quot;.</td>
+</tr>
+<tr>
+<td>MONTH</td>
+<td>INT</td>
+<td>1-12</td>
+<td>Required if MODE is &quot;Hold Until&quot; and if <code>hold_until_mode</code> capability is &quot;date,time&quot;.</td>
+</tr>
+<tr>
+<td>DAY</td>
+<td>INT</td>
+<td>1-31</td>
+<td>Required if MODE is &quot;Hold Until&quot; and if <code>hold_until_mode</code> capability is &quot;date,time&quot;.</td>
+</tr>
+<tr>
+<td>HOUR</td>
+<td>INT</td>
+<td>0-23</td>
+<td>Required if MODE is &quot;Hold Until&quot;.</td>
+</tr>
+<tr>
+<td>MINUTE</td>
+<td>INT</td>
+<td>0-59</td>
+<td>Required if MODE is &quot;Hold Until&quot;.</td>
 </tr>
 </tbody></table>
-
-<h3 id='thermostat-notifications-hold_mode_changed-returns'>Returns</h3>
-
-<p><code>None</code></p>
 
 <h2 id='thermostat-notifications-humidify_setpoint_changed'>HUMIDIFY_SETPOINT_CHANGED</h2>
 
@@ -2682,7 +2743,7 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 </tr>
 </thead><tbody>
 <tr>
-<td>str</td>
+<td>NAME</td>
 <td>Name of Preset.</td>
 </tr>
 </tbody></table>
@@ -2693,7 +2754,7 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 
 <h2 id='thermostat-notifications-preset_fields_changed'>PRESET_FIELDS_CHANGED</h2>
 
-<p>Updates the  Preset FIELDS TEMPLATE that UIs display for a Preset Event. To UI comes through as <code>preset_fields</code>.  If this is modified, it is possible that existing presets will have data that is not in compliance. However, a protocol driver can modify this to have new <code>preset_fields</code> which are compatible. Do not delete this as Events are erased when presets are deleted. </p>
+<p>Updates the  Preset FIELDS TEMPLATE that UIs display for adding and modifying Presets. To UI comes through as <code>preset_fields</code>.  If this is modified, it is possible that existing presets will have data that is not in compliance. However, a protocol driver can modify this to have new <code>preset_fields</code> which are compatible. Do not delete this as Events are erased when presets are deleted. </p>
 
 <h3 id='thermostat-notifications-preset_fields_changed-name'>Name</h3>
 
@@ -2713,9 +2774,93 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 </tr>
 </tbody></table>
 
-<h3 id='thermostat-notifications-preset_fields_changed-returns'>Returns</h3>
+<h3 id='thermostat-notifications-preset_fields_changed-sample-preset_fields-xml'>Sample preset_fields XML</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;preset_fields&gt;</span>
+    <span class="nt">&lt;field</span>
+        <span class="na">id =</span> <span class="s">"heat_setpoint_f"</span>
+        <span class="na">type =</span> <span class="s">"number"</span>
+        <span class="na">label =</span> <span class="s">"Heat Below"</span>
+        <span class="na">min =</span> <span class="s">"50"</span>
+        <span class="na">max =</span> <span class="s">"90"</span>
+        <span class="na">res =</span> <span class="s">"1"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span>
+        <span class="na">id =</span> <span class="s">"heat_setpoint_c"</span>
+        <span class="na">type =</span> <span class="s">"number"</span>
+        <span class="na">label =</span> <span class="s">"Heat Below"</span>
+        <span class="na">min =</span> <span class="s">"10"</span>
+        <span class="na">max =</span> <span class="s">"32"</span>
+        <span class="na">res =</span> <span class="s">"0.5"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span>
+        <span class="na">id =</span> <span class="s">"cool_setpoint_f"</span>
+        <span class="na">type =</span> <span class="s">"number"</span>
+        <span class="na">label =</span> <span class="s">"Cool Above"</span>
+        <span class="na">min =</span> <span class="s">"50"</span>
+        <span class="na">max =</span> <span class="s">"90"</span>
+        <span class="na">res =</span> <span class="s">"1"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span>
+        <span class="na">id =</span> <span class="s">"cool_setpoint_c"</span>
+        <span class="na">type =</span> <span class="s">"number"</span>
+        <span class="na">label =</span> <span class="s">"Cool Above"</span>
+        <span class="na">min =</span> <span class="s">"10"</span>
+        <span class="na">max =</span> <span class="s">"32"</span>
+        <span class="na">res =</span> <span class="s">"0.5"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span>
+        <span class="na">id =</span> <span class="s">"humidify_setpoint"</span>
+        <span class="na">type =</span> <span class="s">"number"</span>
+        <span class="na">label =</span> <span class="s">"Humidify Setpoint"</span>
+        <span class="na">min =</span> <span class="s">"0"</span>
+        <span class="na">max =</span> <span class="s">"90"</span>
+        <span class="na">res =</span> <span class="s">"5"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span>
+        <span class="na">id =</span> <span class="s">"dehumidify_setpoint"</span>
+        <span class="na">type =</span> <span class="s">"number"</span>
+        <span class="na">label =</span> <span class="s">"Dehumidify Setpoint"</span>
+        <span class="na">min =</span> <span class="s">"10"</span>
+        <span class="na">max =</span> <span class="s">"100"</span>
+        <span class="na">res =</span> <span class="s">"5"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">id =</span> <span class="s">"hvac_mode"</span> <span class="na">type =</span> <span class="s">"list"</span> <span class="na">label =</span> <span class="s">"HVAC Mode"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;list&gt;</span>
+            <span class="nt">&lt;item</span> <span class="na">text =</span> <span class="s">"Off"</span> <span class="na">value =</span> <span class="s">"Off"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;item</span> <span class="na">text =</span> <span class="s">"Heat"</span> <span class="na">value =</span> <span class="s">"Heat"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;item</span> <span class="na">text =</span> <span class="s">"Cool"</span> <span class="na">value =</span> <span class="s">"Cool"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/list&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">id =</span> <span class="s">"humidity_mode"</span> <span class="na">type =</span> <span class="s">"list"</span> <span class="na">label =</span> <span class="s">"Humidity Mode"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;list&gt;</span>
+            <span class="nt">&lt;item</span> <span class="na">text =</span> <span class="s">"Off"</span> <span class="na">value =</span> <span class="s">"Off"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;item</span> <span class="na">text =</span> <span class="s">"Humidify"</span> <span class="na">value =</span> <span class="s">"Humidify"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;item</span> <span class="na">text =</span> <span class="s">"Dehumidify"</span> <span class="na">value =</span> <span class="s">"Dehumidify"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;item</span> <span class="na">text =</span> <span class="s">"Auto"</span> <span class="na">value =</span> <span class="s">"Auto"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/list&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">id =</span> <span class="s">"fan_mode"</span> <span class="na">type =</span> <span class="s">"list"</span> <span class="na">label =</span> <span class="s">"Fan Mode"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;list&gt;</span>
+            <span class="nt">&lt;item</span> <span class="na">text =</span> <span class="s">"On"</span> <span class="na">value =</span> <span class="s">"On"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;item</span> <span class="na">text =</span> <span class="s">"Auto"</span> <span class="na">value =</span> <span class="s">"Auto"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;item</span> <span class="na">text =</span> <span class="s">"Circulate"</span> <span class="na">value =</span> <span class="s">"Circulate"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/list&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
+<span class="nt">&lt;/preset_fields&gt;</span>
 
-<p><code>None</code></p>
+</code></pre></div>
+<h2 id='thermostat-notifications-scale_changed'>SCALE_CHANGED</h2>
+<p>Changes the scale the proxy tracks for the temperature.  This is primarily important for Composer Pro when programming as it will use this scale for setting temperatures.  Navigators also use this scale. </p>
+<h3 id='thermostat-notifications-scale_changed-remote_sensor_changed'>REMOTE_SENSOR_CHANGED</h3>
+
+<p><code>REMOTE_SENSOR_CHANGED ()</code> </p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>IN_USE</td>
+<td>BOOL</td>
+<td>True/False indicating if the remote sensor should be used.</td>
+</tr>
+</tbody></table>
 
 <h2 id='thermostat-notifications-scale_changed'>SCALE_CHANGED</h2>
 
@@ -3012,72 +3157,6 @@ The capability <code>has_vacation_mode</code> must be set to true for the vacati
 </tbody></table>
 
 <h3 id='thermostat-notifications-temperature_changed-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h2 id='thermostat-notifications-vacation_mode'>VACATION_MODE</h2>
-
-<p>Notification that should be sent to the proxy when vacation mode is turned on or off.</p>
-
-<h3 id='thermostat-notifications-vacation_mode-name'>Name</h3>
-
-<p><code>VACATION_MODE ()</code> </p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ON VACATION</td>
-<td>STR</td>
-<td>True or False</td>
-</tr>
-</tbody></table>
-
-<h3 id='thermostat-notifications-vacation_mode-returns'>Returns</h3>
-
-<p><code>None</code></p>
-
-<h3 id='thermostat-notifications-vacation_mode-usage-note'>Usage Note</h3>
-
-<p>The capability <code>has_vacation_mode</code>  must be set to true for the vacation commands and notifications to be executed. Not to be used with Preset Scheduling.</p>
-
-<h2 id='thermostat-notifications-vacation_setpoints'>VACATION_SETPOINTS</h2>
-
-<p>Notification that should be sent to the proxy when setpoints have been changed for vacation mode. This Notification is not to be used with Preset Scheduling. The capability  <code>has_vacation_mode</code> must be set to true for the vacation commands and notifications to be executed. </p>
-
-<h3 id='thermostat-notifications-vacation_setpoints-name'>Name</h3>
-
-<p><code>VACATION_ SETPOINTS ()</code> </p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>VAC HEAT SETPOINT</td>
-<td>NUM</td>
-<td>New temperature for the heating setpoint while in vacation mode.</td>
-</tr>
-<tr>
-<td>VAC COOL SETPOINT:</td>
-<td>NUM</td>
-<td>New temperature for the cooling setpoint while in vacation mode.</td>
-</tr>
-<tr>
-<td>UNITS</td>
-<td>STR</td>
-<td>F or C – Fahrenheit or Celsius.</td>
-</tr>
-</tbody></table>
-
-<h3 id='thermostat-notifications-vacation_setpoints-returns'>Returns</h3>
 
 <p><code>None</code></p>
 <h1 id='thermostat-dynamic-notifications'>Thermostat Dynamic Notifications</h1>
@@ -5132,6 +5211,37 @@ If <code>can_inc_dec_setpoints</code> is false: <code>SET_SETPOINT_COOL</code
 
 <p><code>None</code></p>
 
+<h2 id='thermostat-proxy-commands-dec_setpoint_dehumidify'>DEC_SETPOINT_DEHUMIDIFY</h2>
+
+<p>Decreases the humidity setpoint. This command is <strong>NOT</strong> handled by the proxy and must be implemented in the protocol driver. This command is available through programming and is only available if <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">can_dehumidify</a> is true. The capability <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities"><code>setpoint_dehumidify_resolution</code></a> may be used to determine the decrement value. Use the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_change">DEHUMIDIFY_SETPOINT_CHANGED</a> notification to notify the proxy of the new dehumidify setpoint value.</p>
+
+<h3 id='thermostat-proxy-commands-dec_setpoint_dehumidify-name'>Name</h3>
+
+<p><code>DEC_SETPOINT_DEHUMIDIFY ()</code></p>
+
+<h3 id='thermostat-proxy-commands-dec_setpoint_dehumidify-parameter'>Parameter</h3>
+
+<p><code>None</code></p>
+
+<h3 id='thermostat-proxy-commands-dec_setpoint_dehumidify-notification'>Notification</h3>
+
+<p>When the thermostat actually changes the dehumidify setpoint, the protocol driver should send back a notification in the form:</p>
+
+<ul>
+<li><code>DEHUMIDIFY_SETPOINT_CHANGED</code></li>
+<li>Parameters:
+
+<ul>
+<li><code>SETPOINT</code></li>
+</ul></li>
+</ul>
+
+<p>See the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_change">dehumidify setpoint changed</a> notification documentation for the exact parameter details and valid values.</p>
+
+<h3 id='thermostat-proxy-commands-dec_setpoint_dehumidify-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
 <h2 id='thermostat-proxy-commands-dec_setpoint_heat'>DEC_SETPOINT_HEAT</h2>
 
 <p>Decreases the heat setpoint. This command is handled by the proxy.</p>
@@ -5170,6 +5280,37 @@ If <code>can_inc_dec_setpoints</code> is false: <code>SET_SETPOINT_HEAT</code
 </ul>
 
 <h3 id='thermostat-proxy-commands-dec_setpoint_heat-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='thermostat-proxy-commands-dec_setpoint_humidify'>DEC_SETPOINT_HUMIDIFY</h2>
+
+<p>Decreases the humidity setpoint. This command is <strong>NOT</strong> handled by the proxy and must be implemented in the protocol driver. This command is available through programming and is only available if <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">can_humidify</a> is true. The capability <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities"><code>setpoint_humidify_resolution</code></a> may be used to determine the decrement value. Use the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidify_setpoint_changed">HUMIDIFY_SETPOINT_CHANGED</a> notification to notify the proxy of the new humidify setpoint value.</p>
+
+<h3 id='thermostat-proxy-commands-dec_setpoint_humidify-name'>Name</h3>
+
+<p><code>DEC_SETPOINT_HUMIDIFY ()</code></p>
+
+<h3 id='thermostat-proxy-commands-dec_setpoint_humidify-parameter'>Parameter</h3>
+
+<p><code>None</code></p>
+
+<h3 id='thermostat-proxy-commands-dec_setpoint_humidify-notification'>Notification</h3>
+
+<p>When the thermostat actually changes the humidify setpoint, the protocol driver should send back a notification in the form:</p>
+
+<ul>
+<li><code>HUMIDIFY_SETPOINT_CHANGED</code></li>
+<li>Parameters:
+
+<ul>
+<li><code>SETPOINT</code></li>
+</ul></li>
+</ul>
+
+<p>See the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidify_setpoint_changed">humidify setpoint changed</a> notification documentation for the exact parameter details and valid values.</p>
+
+<h3 id='thermostat-proxy-commands-dec_setpoint_humidify-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
@@ -5309,6 +5450,37 @@ If <code>can_inc_dec_setpoints</code> is false: <code>SET_SETPOINT_COOL</code
 
 <p><code>None</code></p>
 
+<h2 id='thermostat-proxy-commands-inc_setpoint_dehumidify'>INC_SETPOINT_DEHUMIDIFY</h2>
+
+<p>Increases the humidity setpoint. This command is <strong>NOT</strong> handled by the proxy and must be implemented in the protocol driver. This command is available through programming and is only available if <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">can_dehumidify</a> is true. The capability <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities"><code>setpoint_dehumidify_resolution</code></a> may be used to determine the increment value. Use the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_changed">DEHUMIDIFY_SETPOINT_CHANGED</a> notification to notify the proxy of the new dehumidify setpoint value.</p>
+
+<h3 id='thermostat-proxy-commands-inc_setpoint_dehumidify-name'>Name</h3>
+
+<p><code>INC_SETPOINT_DEHUMIDIFY ()</code></p>
+
+<h3 id='thermostat-proxy-commands-inc_setpoint_dehumidify-parameter'>Parameter</h3>
+
+<p><code>None</code></p>
+
+<h3 id='thermostat-proxy-commands-inc_setpoint_dehumidify-notification'>Notification</h3>
+
+<p>When the thermostat actually changes the dehumidify setpoint, the protocol driver should send back a notification in the form:</p>
+
+<ul>
+<li><code>DEHUMIDIFY_SETPOINT_CHANGED</code></li>
+<li>Parameters:
+
+<ul>
+<li><code>SETPOINT</code></li>
+</ul></li>
+</ul>
+
+<p>See the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_changed">dehumidify setpoint changed</a> notification documentation for the exact parameter details and valid values.</p>
+
+<h3 id='thermostat-proxy-commands-inc_setpoint_dehumidify-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
 <h2 id='thermostat-proxy-commands-inc_setpoint_heat'>INC_SETPOINT_HEAT</h2>
 
 <p>Increases the heat setpoint. This command is handled by the proxy.</p>
@@ -5349,6 +5521,37 @@ If <code>can_inc_dec_setpoints</code> is false: <code>SET_SETPOINT_HEAT</code>
 <p>See the <code>HEAT_SETPOINT_CHANGED</code> notification documentation for the exact parameter details and valid values.</p>
 
 <h3 id='thermostat-proxy-commands-inc_setpoint_heat-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='thermostat-proxy-commands-inc_setpoint_humidify'>INC_SETPOINT_HUMIDIFY</h2>
+
+<p>Increases the humidity setpoint. This command is <strong>NOT</strong> handled by the proxy and must be implemented in the protocol driver. This command is available through programming and is only available if <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">can_humidify</a> is true. The capability <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities"><code>setpoint_humidify_resolution</code></a> may be used to determine the increment value. Use the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidify_setpoint_changed">HUMIDIFY_SETPOINT_CHANGED</a> notification to notify the proxy of the new humidify setpoint value.</p>
+
+<h3 id='thermostat-proxy-commands-inc_setpoint_humidify-name'>Name</h3>
+
+<p><code>INC_SETPOINT_HUMIDIFY ()</code></p>
+
+<h3 id='thermostat-proxy-commands-inc_setpoint_humidify-parameter'>Parameter</h3>
+
+<p><code>None</code></p>
+
+<h3 id='thermostat-proxy-commands-inc_setpoint_humidify-notification'>Notification</h3>
+
+<p>When the thermostat actually changes the humidify setpoint, the protocol driver should send back a notification in the form:</p>
+
+<ul>
+<li><code>HUMIDIFY_SETPOINT_CHANGED</code></li>
+<li>Parameters:
+
+<ul>
+<li><code>SETPOINT</code></li>
+</ul></li>
+</ul>
+
+<p>See the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidify_setpoint_changed">humidify setpoint changed</a> notification documentation for the exact parameter details and valid values.</p>
+
+<h3 id='thermostat-proxy-commands-inc_setpoint_humidify-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
@@ -5848,6 +6051,68 @@ If <code>can_inc_dec_setpoints</code> is false: <code>SET_SETPOINT_SINGLE</co
 <h3 id='thermostat-proxy-commands-set_calibration-returns'>Returns</h3>
 <p><code>None</code></p>
 
+<h2 id='thermostat-proxy-commands-set_event'>SET_EVENT</h2>
+
+<p>Used in conjunction with Preset Scheduling. This command is sent to the protocol driver when the preset scheduler determines it&#39;s time for a new event to be run for Preset Scheduling. </p>
+
+<p>Sets a single thermostat event payload. This command is <strong>NOT</strong> handled by the proxy and must be implemented in the protocol driver. This command is available through programming and is used when the thermostat exposes event-driven behavior that must be forwarded to the connected device.</p>
+
+<h3 id='thermostat-proxy-commands-set_event-name'>Name</h3>
+
+<p><code>SET_EVENT ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PRESET</td>
+<td>STRING</td>
+<td>Name of the Preset that was triggered.</td>
+</tr>
+</tbody></table>
+
+<h3 id='thermostat-proxy-commands-set_event-command-sent-to-protocol-driver'>Command Sent to Protocol Driver</h3>
+
+<p><code>SET_EVENT</code></p>
+
+<h3 id='thermostat-proxy-commands-set_event-notification'>Notification</h3>
+
+<p>Once the protocol driver has handled the <code>SET_EVENT</code> command or the the driver receives a notification from the thermostat that the preset changed, then a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-preset_changed">PRESET_CHANGED</a> notification should be sent to the proxy.</p>
+
+<h2 id='thermostat-proxy-commands-set_events'>SET_EVENTS</h2>
+
+<p>Used in conjunction with Preset Scheduling. This command is sent to the protocol driver for updating all of the preset events. </p>
+
+<h3 id='thermostat-proxy-commands-set_events-name'>Name</h3>
+
+<p><code>SET_EVENTS ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>XML</td>
+<td>STRING</td>
+<td>XML of all of the current preset scheduler events</td>
+</tr>
+</tbody></table>
+
+<h3 id='thermostat-proxy-commands-set_events-command-sent-to-protocol-driver'>Command Sent to Protocol Driver</h3>
+
+<p><code>SET_EVENTS</code></p>
+
+<h3 id='thermostat-proxy-commands-set_events-notification'>Notification</h3>
+
+<p>No notifications returned with this command.</p>
+
 <h2 id='thermostat-proxy-commands-set_lock_screen_mode'>SET_LOCK_SCREEN_MODE</h2>
 
 <p>Sets the Lock Screen Mode on the thermostat.</p>
@@ -5895,6 +6160,259 @@ If <code>can_inc_dec_setpoints</code> is false: <code>SET_SETPOINT_SINGLE</co
 
 <p><code>None</code></p>
 
+<h2 id='thermostat-proxy-commands-set_mode_fan'>SET_MODE_FAN</h2>
+
+<p>Sets the thermostat fan mode. This command is available through programming.</p>
+
+<h3 id='thermostat-proxy-commands-set_mode_fan-name'>Name</h3>
+
+<p><code>SET_MODE_FAN ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>MODE</td>
+<td>STRING</td>
+<td>Required: Mode name to set the fan mode to.</td>
+</tr>
+</tbody></table>
+
+<h3 id='thermostat-proxy-commands-set_mode_fan-notification'>Notification</h3>
+
+<p>When the thermostat actually changes the fan mode, the protocol driver should send back the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-fan_mode_changed">FAN_MODE_CHANGED</a> notification.</p>
+
+<h2 id='thermostat-proxy-commands-set_mode_hold'>SET_MODE_HOLD</h2>
+
+<p>Sets the thermostat hold mode. This command is available through programming and is used to place the thermostat into or out of a hold state.</p>
+
+<h3 id='thermostat-proxy-commands-set_mode_hold-name'>Name</h3>
+
+<p><code>SET_MODE_HOLD ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Range</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>MODE</td>
+<td>STRING</td>
+<td></td>
+<td>Required: Mode name. If MODE is &quot;Hold Until&quot; then the following parameters are required:</td>
+</tr>
+<tr>
+<td>YEAR</td>
+<td>INT</td>
+<td>0-99 (YY)</td>
+<td>Required if MODE is &quot;Hold Until&quot; and if <code>hold_until_mode</code> capability is &quot;date,time&quot;.</td>
+</tr>
+<tr>
+<td>MONTH</td>
+<td>INT</td>
+<td>1-12</td>
+<td>Required if MODE is &quot;Hold Until&quot; and if <code>hold_until_mode</code> capability is &quot;date,time&quot;.</td>
+</tr>
+<tr>
+<td>DAY</td>
+<td>INT</td>
+<td>1-31</td>
+<td>Required if MODE is &quot;Hold Until&quot; and if <code>hold_until_mode</code> capability is &quot;date,time&quot;.</td>
+</tr>
+<tr>
+<td>HOUR</td>
+<td>INT</td>
+<td>0-23</td>
+<td>Required if MODE is &quot;Hold Until&quot;.</td>
+</tr>
+<tr>
+<td>MINUTE</td>
+<td>INT</td>
+<td>0-59</td>
+<td>Required if MODE is &quot;Hold Until&quot;.</td>
+</tr>
+</tbody></table>
+
+<h3 id='thermostat-proxy-commands-set_mode_hold-notification'>Notification</h3>
+
+<p>When the thermostat actually changes the hold mode, the protocol driver should send back the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-hold_mode_changed">HOLD_MODE_CHANGED</a> notification.</p>
+
+<h2 id='thermostat-proxy-commands-set_mode_humidity'>SET_MODE_HUMIDITY</h2>
+
+<p>Sets the thermostat humidity mode. This command is available through programming and is only available when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">can_humidify</a> is enabled.</p>
+
+<h3 id='thermostat-proxy-commands-set_mode_humidity-name'>Name</h3>
+
+<p><code>SET_MODE_HUMIDITY ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>MODE</td>
+<td>STRING</td>
+<td>Required: Humidity mode name. The mode names are determined by the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">humidity_modes</a> capability.</td>
+</tr>
+</tbody></table>
+
+<h3 id='thermostat-proxy-commands-set_mode_humidity-notification'>Notification</h3>
+
+<p>When the thermostat actually changes the humidity mode, the protocol driver should send back the corresponding <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidity_mode_changed">HUMIDITY_MODE_CHANGED</a> notification.</p>
+
+<h2 id='thermostat-proxy-commands-set_mode_hvac'>SET_MODE_HVAC</h2>
+
+<p>Sets the thermostat HVAC mode. This command is available through programming.</p>
+
+<h3 id='thermostat-proxy-commands-set_mode_hvac-name'>Name</h3>
+
+<p><code>SET_MODE_HVAC ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>MODE</td>
+<td>STRING</td>
+<td>Required: HVAC mode name. The mode names are determined by the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-hvac_mode_changed">hvac_modes</a> capability.</td>
+</tr>
+</tbody></table>
+
+<h3 id='thermostat-proxy-commands-set_mode_hvac-parameter'>Parameter</h3>
+
+<p><code>MODE</code></p>
+
+<h3 id='thermostat-proxy-commands-set_mode_hvac-notification'>Notification</h3>
+
+<p>When the thermostat actually changes the HVAC mode, the protocol driver should send back the corresponding <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-hvac_mode_changed">HVAC_MODE_CHANGED</a> notification.</p>
+
+<h2 id='thermostat-proxy-commands-set_preset'>SET_PRESET</h2>
+
+<p>Sets the active thermostat preset. This command is available through programming and is only available when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">can_preset</a> is enabled..</p>
+
+<h3 id='thermostat-proxy-commands-set_preset-name'>Name</h3>
+
+<p><code>SET_PRESET ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>NAME</td>
+<td>STRING</td>
+<td>Required: Preset name.</td>
+</tr>
+</tbody></table>
+
+<h3 id='thermostat-proxy-commands-set_preset-notification'>Notification</h3>
+
+<p>Once the thermostat has been updated, the protocol driver should send back the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-preset_changed">PRESET_CHANGED</a> notification.</p>
+
+<h2 id='thermostat-proxy-commands-set_presets'>SET_PRESETS</h2>
+
+<p>Sets one or more thermostat preset values in a grouped operation. This command is <strong>NOT</strong> handled by the proxy and must be implemented in the protocol driver. This command is available through programming and is used when the thermostat supports preset batching or bulk preset updates.</p>
+
+<h3 id='thermostat-proxy-commands-set_presets-name'>Name</h3>
+
+<p><code>SET_PRESETS ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PRESET_FIELDS</td>
+<td>XML</td>
+<td>Required:</td>
+</tr>
+</tbody></table>
+
+<p><h4 id='thermostat-proxy-commands-set_presets-name-sample-preset_fields-xml'>Sample PRESET_FIELDS XML</h4><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;preset_fields&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">id =</span> <span class="s">&quot;heat_setpoint_f&quot;</span> <span class="na">value =</span> <span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">id =</span> <span class="s">&quot;cool_setpoint_f&quot;</span> <span class="na">value =</span> <span class="s">&quot;86&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">id =</span> <span class="s">&quot;humidify_setpoint&quot;</span> <span class="na">value =</span> <span class="s">&quot;20&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">id =</span> <span class="s">&quot;dehumidify_setpoint&quot;</span> <span class="na">value =</span> <span class="s">&quot;56&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">id =</span> <span class="s">&quot;hvac_mode&quot;</span> <span class="na">value =</span> <span class="s">&quot;Off&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">id =</span> <span class="s">&quot;humidity_mode&quot;</span> <span class="na">value =</span> <span class="s">&quot;Humidify&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">id =</span> <span class="s">&quot;fan_mode&quot;</span> <span class="na">value =</span> <span class="s">&quot;On&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">id =</span> <span class="s">&quot;heat_setpoint_c&quot;</span> <span class="na">value =</span> <span class="s">&quot;10&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">id =</span> <span class="s">&quot;cool_setpoint_c&quot;</span> <span class="na">value =</span> <span class="s">&quot;30&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/preset_fields&gt;</span>
+</code></pre></div>
+<h2 id='thermostat-proxy-commands-set_remote_sensor'>SET_REMOTE_SENSOR</h2>
+<p>Sets the thermostat remote sensor usage state. This command is only available when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">has_remote_sensor</a> is enabled.</p>
+<h3 id='thermostat-proxy-commands-set_remote_sensor-name'>Name</h3>
+<p><code>SET_REMOTE_SENSOR ()</code></p></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>IN_USE</td>
+<td>BOOL</td>
+<td>Required: True/False</td>
+</tr>
+</tbody></table>
+
+<h3 id='thermostat-proxy-commands-set_remote_sensor-parameter'>Parameter</h3>
+
+<p><code>IN_USE</code></p>
+
+<h3 id='thermostat-proxy-commands-set_remote_sensor-notification'>Notification</h3>
+
+<p>When the thermostat actually updates the remote sensor state, the protocol driver should send back the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-remote_sensor_changed">REMOTE_SENSOR_CHANGED</a> notification.</p>
+
+<h2 id='thermostat-proxy-commands-set_scale'>SET_SCALE</h2>
+
+<p>Sets the thermostat temperature scale. This command is available through programming and is used to switch the thermostat between Celsius and Fahrenheit scale values. This command is only available when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">can_change_scale</a> is enabled.</p>
+
+<h3 id='thermostat-proxy-commands-set_scale-name'>Name</h3>
+
+<p><code>SET_SCALE ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>SCALE</td>
+<td>STRING</td>
+<td>Required: CELSIUS, FAHRENHEIT, C, c, F, f</td>
+</tr>
+</tbody></table>
+
+<h3 id='thermostat-proxy-commands-set_scale-notification'>Notification</h3>
+
+<p>When the thermostat actually changes the scale, the protocol driver should send back the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-scale_changed">SCALE_CHANGED</a> notification.</p>
+
 <h2 id='thermostat-proxy-commands-set_setpoint_cool'>SET_SETPOINT_COOL</h2>
 
 <p>Sets the cool setpoint.</p>
@@ -5941,6 +6459,32 @@ If <code>can_inc_dec_setpoints</code> is false: <code>SET_SETPOINT_SINGLE</co
 
 <p><code>None</code></p>
 
+<h2 id='thermostat-proxy-commands-set_setpoint_dehumidify'>SET_SETPOINT_DEHUMIDIFY</h2>
+
+<p>Sets the dehumidify setpoint. This command is available through programming and is only available if the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">can_dehumidify</a> is enabled. The protocol driver must apply the setpoint and notify the proxy when the value changes.</p>
+
+<h3 id='thermostat-proxy-commands-set_setpoint_dehumidify-name'>Name</h3>
+
+<p><code>SET_SETPOINT_DEHUMIDIFY ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>SETPOINT</td>
+<td>INT</td>
+<td>Required: The value is an integer percentage from 0 to 100, depending on the thermostat’s <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">setpoint_dehumidify_min</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">setpoint_dehumidify_max</a> values.</td>
+</tr>
+</tbody></table>
+
+<h3 id='thermostat-proxy-commands-set_setpoint_dehumidify-notification'>Notification</h3>
+
+<p>When the thermostat actually changes the dehumidify setpoint, the protocol driver should send back a [DEHUMIDIFY_SETPOINT_CHANGED]2 notification.</p>
+
 <h2 id='thermostat-proxy-commands-set_setpoint_heat'>SET_SETPOINT_HEAT</h2>
 
 <p>Sets the heat setpoint.</p>
@@ -5985,6 +6529,32 @@ If <code>can_inc_dec_setpoints</code> is false: <code>SET_SETPOINT_SINGLE</co
 <h3 id='thermostat-proxy-commands-set_setpoint_heat-returns'>Returns</h3>
 
 <p><code>None</code></p>
+
+<h2 id='thermostat-proxy-commands-set_setpoint_humidify'>SET_SETPOINT_HUMIDIFY</h2>
+
+<p>Sets the humidify setpoint. This command is available through programming and is only available if the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">can_humidify</a> is enabled. The protocol driver must apply the setpoint and notify the proxy when the value changes.</p>
+
+<h3 id='thermostat-proxy-commands-set_setpoint_humidify-name'>Name</h3>
+
+<p><code>SET_SETPOINT_HUMIDIFY ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>SETPOINT</td>
+<td>INT</td>
+<td>Required: The value is an integer percentage from 0 to 100, depending on the thermostat’s <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">setpoint_humidify_min</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">setpoint_humidify_max</a> values.</td>
+</tr>
+</tbody></table>
+
+<h3 id='thermostat-proxy-commands-set_setpoint_humidify-notification'>Notification</h3>
+
+<p>When the thermostat actually changes the humidify setpoint, the protocol driver should send back a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidify_setpoint_changed">HUMIDIFY_SETPOINT_CHANGED</a> notification.</p>
 
 <h2 id='thermostat-proxy-commands-set_setpoint_single'>SET_SETPOINT_SINGLE</h2>
 
@@ -6119,83 +6689,6 @@ If <code>can_inc_dec_setpoints</code> is false: <code>SET_SETPOINT_SINGLE</co
 <h3 id='thermostat-proxy-commands-update_schedule_entry_name-returns'>Returns</h3>
 
 <p><code>None</code></p>
-<h1 id='thermostat-commands-not-handled-by-the-proxy'>Thermostat Commands not Handled by the Proxy</h1>
-
-<h2 id='thermostat-commands-not-handled-by-the-proxy-commands-not-handled-by-the-proxy'>Commands Not Handled by the Proxy</h2>
-
-<p>This section includes Commands supported by many protocol drivers but are not directly handled by the Thermostat proxy:</p>
-
-<p><code>DEC_SETPOINT_HUMIDIFY</code>
-Used to Decrement the Setpoint by one step.</p>
-
-<p><code>DEC_SETPOINT_DEHUMIDIFY</code>
-Used to Decrement the Setpoint by one step.</p>
-
-<p><code>INC_SETPOINT_DEHUMIDIFY</code>
-Used to increment the Setpoint by one step.</p>
-
-<p><code>INC_SETPOINT_HUMIDIFY</code>
-Used to increment the Setpoint by one step.</p>
-
-<p><code>SET_CALIBRATION</code>
-Used to set the calibration value. </p>
-
-<p><code>SET_EVENT</code>
-Occurs when the scheduler determines it&#39;s time for a new event to be run for Preset Scheduling</p>
-
-<p><code>SET_EVENTS</code>
-XML that is provided from the proxy in the case that a protocol driver wants to push the Preset Schedule to hardware</p>
-
-<p><code>SET_REMOTE_SENSOR</code>
-Used to indicate if the remote sensor on the thermostat is in use.</p>
-
-<p><code>SET_SCALE</code>
-Used to set the temperature scale the thermostat should use.</p>
-
-<p><code>SET_MODE_FAN</code>
-Used to set the current fan mode of the thermostat.</p>
-
-<p><code>SET_MODE_HOLD</code>
-Used to set the current hold mode of the thermostat.</p>
-
-<p><code>SET_MODE_HUMIDITY</code>
-Used to set the humidification mode in a protocol driver.</p>
-
-<p><code>SET_MODE_HVAC</code>
-Used to set the HVAC mode in a protocol driver.</p>
-
-<p><code>SET_OUTDOOR_TEMPERATURE</code>
-Set the outdoor temperature which is used by some thermostats for the purpose of humidity balancing, fresh air venting, air quality venting, and other HVAC functionality.</p>
-
-<p><code>SET_PRESET</code>
-Occurs when someone selects to run a preset OUTSIDE of its regular schedule. </p>
-
-<p><code>SET_PRESETS</code>
-XML that the Proxy sends down to a protocol driver that contains information about presets. If preset scheduling is a capability of the protocol driver.</p>
-
-<p><code>SET_SETPOINT_DEHUMIDIFY</code>
-Used to set the dehumidify setpoint.</p>
-
-<p><code>SET_SETPOINT_COOL</code>
-Used to set the cool setpoint. </p>
-
-<p><code>SET_SETPOINT_HEAT</code>
-Used to set the heat setpoint. </p>
-
-<p><code>SET_SETPOINT_HUMIDIFY</code>
-Used to set the humidify setpoint.</p>
-
-<p><code>SET_SETPOINT_SINGLE</code>
-Used to set the single setpoint value.</p>
-
-<p><code>SET_VAC_SETPOINT_COOL</code>
-Used to set the cool setpoint when it vacation mode</p>
-
-<p><code>SET_VAC_SETPOINT_HEAT</code>
-Used to set the heat setpoint when it vacation mode</p>
-
-<p><code>SET_VACATION_MODE</code>
-Used to indicate if the thermostat is in vacation mode or not</p>
 <h1 id='thermostat-proxy-variables'>Thermostat Proxy Variables</h1>
 
 <h2 id='thermostat-proxy-variables-thermostat-proxy-variables'>THERMOSTAT PROXY VARIABLES</h2>
@@ -6207,575 +6700,533 @@ Note: Temperature units are stored and processed in the proxy as current units, 
 
 <p>Current cool setpoint.</p>
 
-<p><strong>Variable ID:</strong> 1103</p>
+<p>Variable ID: 1103</p>
 
-<p><strong>Type:</strong> int</p>
+<p>Type: int</p>
 
-<p><strong>Read Only:</strong> false</p>
+<p>Read Only: false</p>
 
-<p><strong>Hidden:</strong> true</p>
+<p>Hidden: true</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-cool_setpoint_changed">COOL_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-cool_setpoint_changed">COOL_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-cool_setpoint_c'>COOL_SETPOINT_C</h3>
 
 <p>Cool setpoint in Celsius.</p>
 
-<p><strong>Variable ID:</strong> 1135</p>
+<p>Variable ID: 1135</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> false</p>
+<p>Read Only: false</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-cool_setpoint_changed">COOL_SETPOINT_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-cool_setpoint_changed">COOL_SETPOINT_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-cool_setpoint_f'>COOL_SETPOINT_F</h3>
 
 <p>Cool setpoint in Fahrenheit.</p>
 
-<p><strong>Variable ID:</strong> 1134</p>
+<p>Variable ID: 1134</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> false</p>
+<p>Read Only: false</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-cool_setpoint_changed">COOL_SETPOINT_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-cool_setpoint_changed">COOL_SETPOINT_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-dehumidify_setpoint'>DEHUMIDIFY_SETPOINT</h3>
 
 <p>Current dehumidify setpoint.</p>
 
-<p><strong>Variable ID:</strong> 1143</p>
+<p>Variable ID: 1143</p>
 
-<p><strong>Type:</strong> int</p>
+<p>Type: int</p>
 
-<p><strong>Read Only:</strong> false</p>
+<p>Read Only: false</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_change">DEHUMIDIFY_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_change">DEHUMIDIFY_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-display_coolsetpoint'>DISPLAY_COOLSETPOINT</h3>
 
 <p>Displayed cool setpoint.</p>
 
-<p><strong>Variable ID:</strong> 1119</p>
+<p>Variable ID: 1119</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> true</p>
+<p>Hidden: true</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-cool_setpoint_changed">COOL_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-cool_setpoint_changed">COOL_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-display_heatsetpoint'>DISPLAY_HEATSETPOINT</h3>
 
 <p>Displayed heat setpoint.</p>
 
-<p><strong>Variable ID:</strong> 1118</p>
+<p>Variable ID: 1118</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> true</p>
+<p>Hidden: true</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-heat_setpoint_changed">HEAT_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-heat_setpoint_changed">HEAT_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-display_temperature'>DISPLAY_TEMPERATURE</h3>
 
 <p>Displayed temperature.</p>
 
-<p><strong>Variable ID:</strong> 1117</p>
+<p>Variable ID: 1117</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> true</p>
+<p>Hidden: true</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-temperature_changed">TEMPERATURE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-temperature_changed">TEMPERATURE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-fan_mode'>FAN_MODE</h3>
 
 <p>Current fan mode.</p>
 
-<p><strong>Variable ID:</strong> 1105</p>
+<p>Variable ID: 1105</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-fan_mode_changed">FAN_MODE_CHANGED</a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_fan_modes_changed">ALLOWED_FAN_MODES_CHANGED</a>, and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-fan_mode_changed">FAN_MODE_CHANGED</a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_fan_modes_changed">ALLOWED_FAN_MODES_CHANGED</a>, and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-fan_modes_list'>FAN_MODES_LIST</h3>
 
 <p>Comma-separated list of supported fan modes.</p>
 
-<p><strong>Variable ID:</strong> 1121</p>
+<p>Variable ID: 1121</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> true</p>
+<p>Hidden: true</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_fan_modes_changed">ALLOWED_FAN_MODES_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_fan_modes_changed">ALLOWED_FAN_MODES_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-fan_state'>FAN_STATE</h3>
 
 <p>Current fan state.</p>
 
-<p><strong>Variable ID:</strong> 1108</p>
+<p>Variable ID: 1108</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-fan_state_change">FAN_STATE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-fan_state_changed">FAN_STATE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-heat_setpoint'>HEAT_SETPOINT</h3>
 
 <p>Current heat setpoint.</p>
 
-<p><strong>Variable ID:</strong> 1102</p>
+<p>Variable ID: 1102</p>
 
-<p><strong>Type:</strong> int</p>
+<p>Type: int</p>
 
-<p><strong>Read Only:</strong> false</p>
+<p>Read Only: false</p>
 
-<p><strong>Hidden:</strong> true</p>
+<p>Hidden: true</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-heat_setpoint_changed">HEAT_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-heat_setpoint_changed">HEAT_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-heat_setpoint_c'>HEAT_SETPOINT_C</h3>
 
 <p>Heat setpoint in Celsius.</p>
 
-<p><strong>Variable ID:</strong> 1133</p>
+<p>Variable ID: 1133</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> false</p>
+<p>Read Only: false</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-heat_setpoint_changed">HEAT_SETPOINT_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-heat_setpoint_changed">HEAT_SETPOINT_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-heat_setpoint_f'>HEAT_SETPOINT_F</h3>
 
 <p>Heat setpoint in Fahrenheit.</p>
 
-<p><strong>Variable ID:</strong> 1132</p>
+<p>Variable ID: 1132</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> false</p>
+<p>Read Only: false</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-heat_setpoint_changed">HEAT_SETPOINT_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-heat_setpoint_changed">HEAT_SETPOINT_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-heatcool_setpoints_deadband_c'>HEATCOOL_SETPOINTS_DEADBAND_C</h3>
 
 <p>Heat/cool deadband in Celsius.</p>
 
-<p><strong>Variable ID:</strong> 1147</p>
+<p>Variable ID: 1147</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dynamic_capabilities_changed">DYNAMIC_CAPABILITIES_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dynamic_capabilities_changed">DYNAMIC_CAPABILITIES_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-heatcool_setpoints_deadband_f'>HEATCOOL_SETPOINTS_DEADBAND_F</h3>
 
 <p>Heat/cool deadband in Fahrenheit.</p>
 
-<p><strong>Variable ID:</strong> 1146</p>
+<p>Variable ID: 1146</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dynamic_capabilities_changed">DYNAMIC_CAPABILITIES_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dynamic_capabilities_changed">DYNAMIC_CAPABILITIES_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-hold_mode'>HOLD_MODE</h3>
 
 <p>Current hold mode.</p>
 
-<p><strong>Variable ID:</strong> 1106</p>
+<p>Variable ID: 1106</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-hold_mode_changed">HOLD_MODE_CHANGED</a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_hold_modes_changed">ALLOWED_HOLD_MODES_CHANGED</a>, and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-hold_mode_changed">HOLD_MODE_CHANGED</a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_hold_modes_changed">ALLOWED_HOLD_MODES_CHANGED</a>, and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-hold_modes_list'>HOLD_MODES_LIST</h3>
 
 <p>Comma-separated list of hold modes.</p>
 
-<p><strong>Variable ID:</strong> 1122</p>
+<p>Variable ID: 1122</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> true</p>
+<p>Hidden: true</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_hold_modes_changed">ALLOWED_HOLD_MODES_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_hold_modes_changed">ALLOWED_HOLD_MODES_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-humidify_setpoint'>HUMIDIFY_SETPOINT</h3>
 
 <p>Current humidify setpoint.</p>
 
-<p><strong>Variable ID:</strong> 1142</p>
+<p>Variable ID: 1142</p>
 
-<p><strong>Type:</strong> int</p>
+<p>Type: int</p>
 
-<p><strong>Read Only:</strong> false</p>
+<p>Read Only: false</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidify_setpoint_changed">HUMIDIFY_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidify_setpoint_changed">HUMIDIFY_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-humidity'>HUMIDITY</h3>
 
 <p>Current humidity value.</p>
 
-<p><strong>Variable ID:</strong> 1138</p>
+<p>Variable ID: 1138</p>
 
-<p><strong>Type:</strong> int</p>
+<p>Type: int</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidity_changed">HUMIDITY_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidity_changed">HUMIDITY_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-humidity_mode'>HUMIDITY_MODE</h3>
 
 <p>Current humidity mode.</p>
 
-<p><strong>Variable ID:</strong> 1139</p>
+<p>Variable ID: 1139</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidity_mode_changed">HUMIDITY_MODE_CHANGED</a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_humidity_modes_changed">ALLOWED_HUMIDITY_MODES_CHANGED</a>, and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidity_mode_changed">HUMIDITY_MODE_CHANGED</a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_humidity_modes_changed">ALLOWED_HUMIDITY_MODES_CHANGED</a>, and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-humidity_modes_list'>HUMIDITY_MODES_LIST</h3>
 
 <p>Comma-separated list of supported humidity modes.</p>
 
-<p><strong>Variable ID:</strong> 1140</p>
+<p>Variable ID: 1140</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> true</p>
+<p>Hidden: true</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_humidity_modes_changed">ALLOWED_HUMIDITY_MODES_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_humidity_modes_changed">ALLOWED_HUMIDITY_MODES_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-humidity_setpoints_deadband'>HUMIDITY_SETPOINTS_DEADBAND</h3>
 
 <p>Humidity setpoint deadband.</p>
 
-<p><strong>Variable ID:</strong> 1148</p>
+<p>Variable ID: 1148</p>
 
-<p><strong>Type:</strong> int</p>
+<p>Type: int</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dynamic_capabilities_changed">DYNAMIC_CAPABILITIES_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dynamic_capabilities_changed">DYNAMIC_CAPABILITIES_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-humidity_state'>HUMIDITY_STATE</h3>
 
 <p>Current humidity state.</p>
 
-<p><strong>Variable ID:</strong> 1141</p>
+<p>Variable ID: 1141</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidity_state_changed">HUMIDITY_STATE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-humidity_state_changed">HUMIDITY_STATE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-hvac_mode'>HVAC_MODE</h3>
 
 <p>Current HVAC mode.</p>
 
-<p><strong>Variable ID:</strong> 1104</p>
+<p>Variable ID: 1104</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-hvac_mode_changed">HVAC_MODE_CHANGED</a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_hvac_modes_changed">ALLOWED_HVAC_MODES_CHANGED</a>, and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-hvac_mode_changed">HVAC_MODE_CHANGED</a>, <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_hvac_modes_changed">ALLOWED_HVAC_MODES_CHANGED</a>, and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-hvac_modes_list'>HVAC_MODES_LIST</h3>
 
 <p>Comma-separated list of supported HVAC modes.</p>
 
-<p><strong>Variable ID:</strong> 1120</p>
+<p>Variable ID: 1120</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> true</p>
+<p>Hidden: true</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_hvac_modes_changed">ALLOWED_HVAC_MODES_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_hvac_modes_changed">ALLOWED_HVAC_MODES_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-hvac_state'>HVAC_STATE</h3>
 
 <p>Current HVAC state.</p>
 
-<p><strong>Variable ID:</strong> 1107</p>
+<p>Variable ID: 1107</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-hvac_state_changed">HVAC_STATE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-hvac_state_changed">HVAC_STATE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-is_connected'>IS_CONNECTED</h3>
 
 <p>Indicates whether the hardware is online/available.</p>
 
-<p><strong>Variable ID:</strong> 1112</p>
+<p>Variable ID: 1112</p>
 
-<p><strong>Type:</strong> bool</p>
+<p>Type: bool</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-connection">CONNECTION</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-connection">CONNECTION</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-lock_screen_mode'>LOCK_SCREEN_MODE</h3>
 
 <p>Current lock screen mode.</p>
 
-<p><strong>Variable ID:</strong> 1151</p>
+<p>Variable ID: 1151</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-lock_screen_mode_changed">LOCK_SCREEN_MODE_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-lock_screen_mode_changed">LOCK_SCREEN_MODE_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-message'>MESSAGE</h3>
 
 <p>Status message supplied by the protocol driver.</p>
 
-<p><strong>Variable ID:</strong> 1145</p>
+<p>Variable ID: 1145</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-message_changed">MESSAGE_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-message_changed">MESSAGE_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-outdoor_temperature_c'>OUTDOOR_TEMPERATURE_C</h3>
 
 <p>Outdoor temperature in Celsius.</p>
 
-<p><strong>Variable ID:</strong> 1137</p>
+<p>Variable ID: 1137</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-outdoor_temperature_changed">OUTDOOR_TEMPERATURE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-outdoor_temperature_changed">OUTDOOR_TEMPERATURE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-outdoor_temperature_f'>OUTDOOR_TEMPERATURE_F</h3>
 
 <p>Outdoor temperature in Fahrenheit.</p>
 
-<p><strong>Variable ID:</strong> 1136</p>
+<p>Variable ID: 1136</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-outdoor_temperature_changed">OUTDOOR_TEMPERATURE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-outdoor_temperature_changed">OUTDOOR_TEMPERATURE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-preset'>PRESET</h3>
 
 <p>Currently active preset name.</p>
 
-<p><strong>Variable ID:</strong> 1144</p>
+<p>Variable ID: 1144</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-preset_changed">PRESET_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-preset_changed">PRESET_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-scale'>SCALE</h3>
 
 <p>Current scale passed in on the <code>SCALE_CHANGED</code> notify.</p>
 
-<p><strong>Variable ID:</strong> 1100</p>
+<p>Variable ID: 1100</p>
 
-<p><strong>Type:</strong> string</p>
+<p>Type: string</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-scale_changed">SCALE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-scale_changed">SCALE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-single_setpoint_c'>SINGLE_SETPOINT_C</h3>
 
 <p>Current single setpoint in Celsius.</p>
 
-<p><strong>Variable ID:</strong> 1150</p>
+<p>Variable ID: 1150</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> false</p>
+<p>Read Only: false</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-single_setpoint_changed">SINGLE_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-single_setpoint_changed">SINGLE_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-single_setpoint_f'>SINGLE_SETPOINT_F</h3>
 
 <p>Current single setpoint in Fahrenheit.</p>
 
-<p><strong>Variable ID:</strong> 1149</p>
+<p>Variable ID: 1149</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> false</p>
+<p>Read Only: false</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-single_setpoint_changed">SINGLE_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-single_setpoint_changed">SINGLE_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-temperature'>TEMPERATURE</h3>
 
 <p>Current indoor temperature in the active scale.</p>
 
-<p><strong>Variable ID:</strong> 1101</p>
+<p>Variable ID: 1101</p>
 
-<p><strong>Type:</strong> int</p>
+<p>Type: int</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> true</p>
+<p>Hidden: true</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-temperature_changed">TEMPERATURE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-temperature_changed">TEMPERATURE_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-temperature_c'>TEMPERATURE_C</h3>
 
 <p>Current temperature in Celsius.</p>
 
-<p><strong>Variable ID:</strong> 1131</p>
+<p>Variable ID: 1131</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-temperature_changed">TEMPERATURE_CHANGED</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-temperature_changed">TEMPERATURE_CHANGED</a> notification</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-temperature_f'>TEMPERATURE_F</h3>
 
 <p>Current temperature in Fahrenheit.</p>
 
-<p><strong>Variable ID:</strong> 1130</p>
+<p>Variable ID: 1130</p>
 
-<p><strong>Type:</strong> float</p>
+<p>Type: float</p>
 
-<p><strong>Read Only:</strong> true</p>
+<p>Read Only: true</p>
 
-<p><strong>Hidden:</strong> false</p>
+<p>Hidden: false</p>
 
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-temperature_changed">TEMPERATURE_CHANGED</a> notification</p>
-
-<h3 id='thermostat-proxy-variables-thermostat-proxy-variables-vacation_cool_setpoint'>VACATION_COOL_SETPOINT</h3>
-
-<p>Vacation cool setpoint.</p>
-
-<p><strong>Variable ID:</strong> 1111</p>
-
-<p><strong>Type:</strong> int</p>
-
-<p><strong>Read Only:</strong> false</p>
-
-<p><strong>Hidden:</strong> false</p>
-
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-vacation_setpoints">VACATION_SETPOINTS</a> notification</p>
-
-<h3 id='thermostat-proxy-variables-thermostat-proxy-variables-vacation_heat_setpoint'>VACATION_HEAT_SETPOINT</h3>
-
-<p>Vacation heat setpoint.</p>
-
-<p><strong>Variable ID:</strong> 1110</p>
-
-<p><strong>Type:</strong> int</p>
-
-<p><strong>Read Only:</strong> false</p>
-
-<p><strong>Hidden:</strong> false</p>
-
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-vacation_setpoints">VACATION_SETPOINTS</a> notification</p>
-
-<h3 id='thermostat-proxy-variables-thermostat-proxy-variables-vacation_mode'>VACATION_MODE</h3>
-
-<p>Vacation mode state.</p>
-
-<p><strong>Variable ID:</strong> 1109</p>
-
-<p><strong>Type:</strong> bool</p>
-
-<p><strong>Read Only:</strong> false</p>
-
-<p><strong>Hidden:</strong> false</p>
-
-<p><strong>Updated by:</strong> <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-vacation_mode">VACATION_MODE</a> notification</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-temperature_changed">TEMPERATURE_CHANGED</a> notification</p>
 
       </div>
       <div class="dark-box">
