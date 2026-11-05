@@ -33,5 +33,3 @@ The following Conditionals are supported with the Thermostat Proxy and can be us
 - `IF_SINGLE_SETPOINT` - numeric comparison against the current single setpoint.
 
 - `IF_TEMPERATURE` - simple integer test to see if the current temperature is a supplied value. No manipulation is done on the units for the temperature. If the thermostat is configured to be celsius, the value to compare it with should be in Celsius as well.
-
-- `IF_VACATION_MODE` - simple boolean test to see if the vacation mode is on/off.

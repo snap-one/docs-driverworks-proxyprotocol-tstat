@@ -1,10 +1,10 @@
-## DEHUMIDIFY\_SETPOINT\_CHANGE
+## DEHUMIDIFY\_SETPOINT\_CHANGED
 
 The dehumidify setpoint has changed.
 
 ### Name
 
-`DEHUMIDIFY_SETPOINT_CHANGE ()`
+`DEHUMIDIFY_SETPOINT_CHANGED ()`
 
 
 | Parameter | Description                                                     |

@@ -20,8 +20,6 @@ In the past some UI's listened for variables not DataToUI calls. In 2.7.0 all U
 
 `Fan State Changed` (Event=107)
 
-`Vacation Mode Changed` (Event=108)
-
 `Outdoor Temperature Changed` (Event=109)
 
 `Humidity Changed` (Event=110)
