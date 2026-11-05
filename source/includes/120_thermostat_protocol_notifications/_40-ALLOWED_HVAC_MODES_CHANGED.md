@@ -1,4 +1,4 @@
-## ALLOWED HVAC MODES CHANGED
+## ALLOWED\_HVAC\_MODES\_CHANGED
 
 Changes the value of the variable `HVAC_MODES_LIST`
 

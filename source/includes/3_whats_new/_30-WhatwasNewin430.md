@@ -75,7 +75,7 @@
 [19]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-delete_schedule_entry
 [20]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-restore_schedule_entry
 [21]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_rename
-[22]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-commands-not-handled-by-the-proxy
+[22]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-set_mode_hold
 [23]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_delete
 [24]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_modify
 [25]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_event_add

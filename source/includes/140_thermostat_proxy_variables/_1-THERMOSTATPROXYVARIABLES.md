@@ -574,7 +574,7 @@ Updated by: [TEMPERATURE_CHANGED][5] notification
 
 [1]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-cool_setpoint_changed
 [2]:  https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-fan_mode_changed
-[3]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_change
+[3]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_changed
 [4]:  https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-heat_setpoint_changed
 [5]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-temperature_changed
 [6]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-allowed_fan_modes_changed
