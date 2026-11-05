@@ -438,7 +438,7 @@
                     <a href="#thermostat-notifications-allowed_humidity_modes_changed" class="toc-h2 toc-link" data-title="ALLOWED_HUMIDITY_MODES_CHANGED">ALLOWED_HUMIDITY_MODES_CHANGED</a>
                   </li>
                   <li>
-                    <a href="#thermostat-notifications-allowed-hvac-modes-changed" class="toc-h2 toc-link" data-title="ALLOWED HVAC MODES CHANGED">ALLOWED HVAC MODES CHANGED</a>
+                    <a href="#thermostat-notifications-allowed_hvac_modes_changed" class="toc-h2 toc-link" data-title="ALLOWED_HVAC_MODES_CHANGED">ALLOWED_HVAC_MODES_CHANGED</a>
                   </li>
                   <li>
                     <a href="#thermostat-notifications-buttons_lock_changed" class="toc-h2 toc-link" data-title="BUTTONS_LOCK_CHANGED">BUTTONS_LOCK_CHANGED</a>
@@ -510,7 +510,7 @@
                     <a href="#thermostat-notifications-preset_fields_changed" class="toc-h2 toc-link" data-title="PRESET_FIELDS_CHANGED">PRESET_FIELDS_CHANGED</a>
                   </li>
                   <li>
-                    <a href="#thermostat-notifications-scale_changed" class="toc-h2 toc-link" data-title="SCALE_CHANGED">SCALE_CHANGED</a>
+                    <a href="#thermostat-notifications-remote_sensor_changed" class="toc-h2 toc-link" data-title="REMOTE_SENSOR_CHANGED">REMOTE_SENSOR_CHANGED</a>
                   </li>
                   <li>
                     <a href="#thermostat-notifications-scale_changed" class="toc-h2 toc-link" data-title="SCALE_CHANGED">SCALE_CHANGED</a>
@@ -1009,7 +1009,7 @@ Your driver can facilitate communications with multiple types of proxies for a s
 </ul>
 <h3 id='what-s-new-what-was-new-in-4-3-0-modified-commands'>Modified Commands</h3>
 <ul>
-<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-commands-not-handled-by-the-proxy">SET_MODE_HOLD</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-set_mode_hold">SET_MODE_HOLD</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_add">PRESET_ADD</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_delete">PRESET_DELETE</a></li>
 <li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-preset_modify">PRESET_MODIFY</a></li>
@@ -1732,11 +1732,11 @@ Your driver can facilitate communications with multiple types of proxies for a s
 
 <p><code>None</code></p>
 
-<h2 id='thermostat-notifications-allowed-hvac-modes-changed'>ALLOWED HVAC MODES CHANGED</h2>
+<h2 id='thermostat-notifications-allowed_hvac_modes_changed'>ALLOWED_HVAC_MODES_CHANGED</h2>
 
 <p>Changes the value of the variable <code>HVAC_MODES_LIST</code></p>
 
-<h3 id='thermostat-notifications-allowed-hvac-modes-changed-name'>Name</h3>
+<h3 id='thermostat-notifications-allowed_hvac_modes_changed-name'>Name</h3>
 
 <p><code>ALLOWED_HVAC_MODES_CHANGED ()</code></p>
 
@@ -1759,7 +1759,7 @@ Your driver can facilitate communications with multiple types of proxies for a s
 </tr>
 </tbody></table>
 
-<h3 id='thermostat-notifications-allowed-hvac-modes-changed-returns'>Returns</h3>
+<h3 id='thermostat-notifications-allowed_hvac_modes_changed-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
@@ -2842,11 +2842,11 @@ Your driver can facilitate communications with multiple types of proxies for a s
 <span class="nt">&lt;/preset_fields&gt;</span>
 
 </code></pre></div>
-<h2 id='thermostat-notifications-scale_changed'>SCALE_CHANGED</h2>
-<p>Changes the scale the proxy tracks for the temperature.  This is primarily important for Composer Pro when programming as it will use this scale for setting temperatures.  Navigators also use this scale. </p>
-<h3 id='thermostat-notifications-scale_changed-remote_sensor_changed'>REMOTE_SENSOR_CHANGED</h3>
+<h2 id='thermostat-notifications-remote_sensor_changed'>REMOTE_SENSOR_CHANGED</h2>
+<p>Updates the remote sensor usage state the proxy tracks for the thermostat. The protocol driver sends this after the thermostat updates its remote sensor state, for example in response to a <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-proxy-commands-set_remote_sensor">SET_REMOTE_SENSOR</a> command. Only applies when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities-thermostat-capabilities-has_remote_sensor">has_remote_sensor</a> is enabled.</p>
+<h3 id='thermostat-notifications-remote_sensor_changed-name'>Name</h3>
 
-<p><code>REMOTE_SENSOR_CHANGED ()</code> </p>
+<p><code>REMOTE_SENSOR_CHANGED ()</code></p>
 
 <table><thead>
 <tr>
@@ -2861,6 +2861,10 @@ Your driver can facilitate communications with multiple types of proxies for a s
 <td>True/False indicating if the remote sensor should be used.</td>
 </tr>
 </tbody></table>
+
+<h3 id='thermostat-notifications-remote_sensor_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
 
 <h2 id='thermostat-notifications-scale_changed'>SCALE_CHANGED</h2>
 
@@ -5213,7 +5217,7 @@ If <code>can_inc_dec_setpoints</code> is false: <code>SET_SETPOINT_COOL</code
 
 <h2 id='thermostat-proxy-commands-dec_setpoint_dehumidify'>DEC_SETPOINT_DEHUMIDIFY</h2>
 
-<p>Decreases the humidity setpoint. This command is <strong>NOT</strong> handled by the proxy and must be implemented in the protocol driver. This command is available through programming and is only available if <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">can_dehumidify</a> is true. The capability <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities"><code>setpoint_dehumidify_resolution</code></a> may be used to determine the decrement value. Use the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_change">DEHUMIDIFY_SETPOINT_CHANGED</a> notification to notify the proxy of the new dehumidify setpoint value.</p>
+<p>Decreases the humidity setpoint. This command is <strong>NOT</strong> handled by the proxy and must be implemented in the protocol driver. This command is available through programming and is only available if <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities">can_dehumidify</a> is true. The capability <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-capabilities"><code>setpoint_dehumidify_resolution</code></a> may be used to determine the decrement value. Use the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_changed">DEHUMIDIFY_SETPOINT_CHANGED</a> notification to notify the proxy of the new dehumidify setpoint value.</p>
 
 <h3 id='thermostat-proxy-commands-dec_setpoint_dehumidify-name'>Name</h3>
 
@@ -5236,7 +5240,7 @@ If <code>can_inc_dec_setpoints</code> is false: <code>SET_SETPOINT_COOL</code
 </ul></li>
 </ul>
 
-<p>See the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_change">dehumidify setpoint changed</a> notification documentation for the exact parameter details and valid values.</p>
+<p>See the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_changed">dehumidify setpoint changed</a> notification documentation for the exact parameter details and valid values.</p>
 
 <h3 id='thermostat-proxy-commands-dec_setpoint_dehumidify-returns'>Returns</h3>
 
@@ -6750,7 +6754,7 @@ Note: Temperature units are stored and processed in the proxy as current units, 
 
 <p>Hidden: false</p>
 
-<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_change">DEHUMIDIFY_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
+<p>Updated by: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-dehumidify_setpoint_changed">DEHUMIDIFY_SETPOINT_CHANGED</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-force_info">FORCE_INFO</a> notifications</p>
 
 <h3 id='thermostat-proxy-variables-thermostat-proxy-variables-display_coolsetpoint'>DISPLAY_COOLSETPOINT</h3>
 
