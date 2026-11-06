@@ -328,7 +328,7 @@ Read Only: true
 
 Hidden: false
 
-Updated by: [DYNAMIC_CAPABILITIES_CHANGED][9] notification
+Updated by: [HUMIDITY_SETPOINTS_DEADBAND][36] notification
 
 
 
@@ -599,4 +599,5 @@ Updated by: [TEMPERATURE_CHANGED][5] notification
 [32]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-scale_changed
 [34]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-schedule_entry_changed
 [35]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-notifications-single_setpoint_changed
+[36]: https://snap-one.github.io/docs-driverworks-proxyprotocol-tstat/#thermostat-dynamic-notifications-humidity_setpoints_deadband
 
