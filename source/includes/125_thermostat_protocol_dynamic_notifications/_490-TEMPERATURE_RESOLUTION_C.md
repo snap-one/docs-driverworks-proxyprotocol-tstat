@@ -1,18 +1,18 @@
 ## TEMPERATURE_RESOLUTION_C
 
-An optional parameter included in a [`DYNAMIC_CAPABILITIES_CHANGED`][1] notification received by the proxy via a `C4:SendToProxy` call. It is a string-based integer value used to update the current temperature resolution in Celsius. The value is passed through the payload as a string representation of the number and is applied to the corresponding [`current_temperature_resolution_c`][2] capability. If the parameter is not provided, the default is `1`.
+An optional parameter included in a [`DYNAMIC_CAPABILITIES_CHANGED`][1] notification received by the proxy via a `C4:SendToProxy` call. It is a string-based decimal value (for example `"0.5"`) used to update the current temperature resolution in Celsius. The value is passed through the payload as a string representation of the number and is applied to the corresponding [`current_temperature_resolution_c`][2] capability. If the parameter is not provided, the default is `1`.
 
 ### Name
 
 `TEMPERATURE_RESOLUTION_C ()`
 
-| Parameter                | Type | Default | Capability                              | Description                                |
-| ------------------------ | ---- | ------- | --------------------------------------- | ------------------------------------------ |
-| TEMPERATURE_RESOLUTION_C | INT  | 1       | [`current_temperature_resolution_c`][2] | Current temperature resolution in Celsius. |
+| Parameter                | Type   | Default | Capability                              | Description                                |
+| ------------------------ | ------ | ------- | --------------------------------------- | ------------------------------------------ |
+| TEMPERATURE_RESOLUTION_C | DOUBLE | 1       | [`current_temperature_resolution_c`][2] | Current temperature resolution in Celsius. |
 
 ### Lua example
 ```lua
-local TemperatureResolutionC = 1
+local TemperatureResolutionC = 0.1
 
 local Params = {
     TEMPERATURE_RESOLUTION_C = tostring(TemperatureResolutionC)
