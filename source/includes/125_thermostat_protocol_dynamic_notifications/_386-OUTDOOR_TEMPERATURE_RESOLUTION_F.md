@@ -1,14 +1,14 @@
 ## OUTDOOR_TEMPERATURE_RESOLUTION_F
 
-An optional parameter included in a [`DYNAMIC_CAPABILITIES_CHANGED`][1] notification received by the proxy via a `C4:SendToProxy` call. It is a string-based integer value used to update the outdoor temperature resolution in Fahrenheit. The value is passed through the payload as a string representation of the number and is applied to the corresponding [`outdoor_temperature_resolution_f`][2] capability. If the parameter is not provided, the default is `1`.
+An optional parameter included in a [`DYNAMIC_CAPABILITIES_CHANGED`][1] notification received by the proxy via a `C4:SendToProxy` call. It is a string-based decimal value (for example `"0.5"`) used to update the outdoor temperature resolution in Fahrenheit. The value is passed through the payload as a string representation of the number and is applied to the corresponding [`outdoor_temperature_resolution_f`][2] capability. If the parameter is not provided, the default is `1`.
 
 ### Name
 
 `OUTDOOR_TEMPERATURE_RESOLUTION_F ()`
 
-| Parameter                        | Type | Default | Capability                              | Range    | Description                                                     |
-| -------------------------------- | ---- | ------- | --------------------------------------- | -------- | --------------------------------------------------------------- |
-| OUTDOOR_TEMPERATURE_RESOLUTION_F | INT  | 1       | [`outdoor_temperature_resolution_f`][2] | 0.01-100 | Outdoor temperature resolution in Fahrenheit (ie 1,3,5,10,etc). |
+| Parameter                        | Type   | Default | Capability                              | Range    | Description                                                     |
+| -------------------------------- | ------ | ------- | --------------------------------------- | -------- | --------------------------------------------------------------- |
+| OUTDOOR_TEMPERATURE_RESOLUTION_F | DOUBLE | 1       | [`outdoor_temperature_resolution_f`][2] | 0.01-100 | Outdoor temperature resolution in Fahrenheit (ie 1,3,5,10,etc). |
 
 ### Lua example
 ```lua

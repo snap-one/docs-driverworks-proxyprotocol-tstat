@@ -33,8 +33,8 @@ Dynamic capabilities, as discussed in this section, are updated by the driver th
 | [COOL_SETPOINT_MAX_F][14]              | INT    | 100         | `setpoint_cool_max_f`              |
 | [COOL_SETPOINT_MIN_C][15]              | INT    | 0           | `setpoint_cool_min_c`              |
 | [COOL_SETPOINT_MIN_F][16]              | INT    | 0           | `setpoint_cool_min_f`              |
-| [COOL_SETPOINT_RESOLUTION_C][17]       | INT    | 1           | `setpoint_cool_resolution_c`       |
-| [COOL_SETPOINT_RESOLUTION_F][18]       | INT    | 1           | `setpoint_cool_resolution_f`       |
+| [COOL_SETPOINT_RESOLUTION_C][17]       | DOUBLE | 1           | `setpoint_cool_resolution_c`       |
+| [COOL_SETPOINT_RESOLUTION_F][18]       | DOUBLE | 1           | `setpoint_cool_resolution_f`       |
 | [DEHUMIDIFY_SETPOINT_MAX][19]          | INT    | 100         | `setpoint_dehumidify_max`          |
 | [DEHUMIDIFY_SETPOINT_MIN][20]          | INT    | 0           | `setpoint_dehumidify_min`          |
 | [DEHUMIDIFY_SETPOINT_RESOLUTION][21]   | INT    | 1           | `setpoint_dehumidify_resolution`   |
@@ -51,8 +51,8 @@ Dynamic capabilities, as discussed in this section, are updated by the driver th
 | [HEAT_SETPOINT_MAX_F][32]              | INT    | 100         | `setpoint_heat_max_f`              |
 | [HEAT_SETPOINT_MIN_C][33]              | INT    | 0           | `setpoint_heat_min_c`              |
 | [HEAT_SETPOINT_MIN_F][34]              | INT    | 0           | `setpoint_heat_min_f`              |
-| [HEAT_SETPOINT_RESOLUTION_C][35]       | INT    | 1           | `setpoint_heat_resolution_c`       |
-| [HEAT_SETPOINT_RESOLUTION_F][36]       | INT    | 1           | `setpoint_heat_resolution_f`       |
+| [HEAT_SETPOINT_RESOLUTION_C][35]       | DOUBLE | 1           | `setpoint_heat_resolution_c`       |
+| [HEAT_SETPOINT_RESOLUTION_F][36]       | DOUBLE | 1           | `setpoint_heat_resolution_f`       |
 | [HOLD_UNTIL_MODE][37]                  | STRING | `date,time` | `hold_until_mode`                  |
 | [HOLD_UNTIL_RESOLUTION][38]            | INT    | 5           | `hold_until_resolution`            |
 | [HUMIDITY_SETPOINTS_DEADBAND][39]      | INT    | 10          | `setpoint_humidity_deadband`       |
@@ -60,20 +60,20 @@ Dynamic capabilities, as discussed in this section, are updated by the driver th
 | [HUMIDIFY_SETPOINT_MIN][41]            | INT    | 0           | `setpoint_humidify_min`            |
 | [HUMIDIFY_SETPOINT_RESOLUTION][42]     | INT    | 1           | `setpoint_humidify_resolution`     |
 | [LOCK_SCREEN_MODES][44]                | STRING | ""          | `lock_screen_modes`                |
-| [OUTDOOR_TEMPERATURE_RESOLUTION_C][45] | INT    | 1           | `outdoor_temperature_resolution_c` |
-| [OUTDOOR_TEMPERATURE_RESOLUTION_F][46] | INT    | 1           | `outdoor_temperature_resolution_f` |
+| [OUTDOOR_TEMPERATURE_RESOLUTION_C][45] | DOUBLE | 1           | `outdoor_temperature_resolution_c` |
+| [OUTDOOR_TEMPERATURE_RESOLUTION_F][46] | DOUBLE | 1           | `outdoor_temperature_resolution_f` |
 | [SINGLE_SETPOINT_MAX_C][47]            | INT    | 100         | `setpoint_single_max_c`            |
 | [SINGLE_SETPOINT_MAX_F][48]            | INT    | 100         | `setpoint_single_max_f`            |
 | [SINGLE_SETPOINT_MIN_C][49]            | INT    | 0           | `setpoint_single_min_c`            |
 | [SINGLE_SETPOINT_MIN_F][50]            | INT    | 0           | `setpoint_single_min_f`            |
-| [SINGLE_SETPOINT_RESOLUTION_C][51]     | INT    | 1           | `setpoint_single_resolution_c`     |
-| [SINGLE_SETPOINT_RESOLUTION_F][52]     | INT    | 1           | `setpoint_single_resolution_f`     |
+| [SINGLE_SETPOINT_RESOLUTION_C][51]     | DOUBLE | 1           | `setpoint_single_resolution_c`     |
+| [SINGLE_SETPOINT_RESOLUTION_F][52]     | DOUBLE | 1           | `setpoint_single_resolution_f`     |
 | [TEMPERATURE_MAX_C][53]                | INT    | 50          | `current_temperature_max_c`        |
 | [TEMPERATURE_MAX_F][54]                | INT    | 120         | `current_temperature_max_f`        |
 | [TEMPERATURE_MIN_C][55]                | INT    | -40         | `current_temperature_min_c`        |
 | [TEMPERATURE_MIN_F][56]                | INT    | -40         | `current_temperature_min_f`        |
-| [TEMPERATURE_RESOLUTION_C][57]         | INT    | 1           | `current_temperature_resolution_c` |
-| [TEMPERATURE_RESOLUTION_F][58]         | INT    | 1           | `current_temperature_resolution_f` |
+| [TEMPERATURE_RESOLUTION_C][57]         | DOUBLE | 1           | `current_temperature_resolution_c` |
+| [TEMPERATURE_RESOLUTION_F][58]         | DOUBLE | 1           | `current_temperature_resolution_f` |
 
 
 ### Lua example
